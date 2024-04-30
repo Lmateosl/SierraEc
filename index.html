@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" id="sierraEcAllPage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/imgs/logoFavIcon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>HOME - SIERRA EC</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-content">
+                <!-- Barra de navegación -->
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-bg">
+                    <div class="container-fluid">
+                        <!-- Logo o imagen en la parte izquierda -->
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/imgs/logoSierraSinfondoAzul.png" alt="Logo Sierra Ec" class="logo-img" width="50%" style="border-radius: 5px;">
+                        </a>
+                        <!-- Botón de hamburguesa para dispositivos móviles -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hambuergesa">
+                            <span style="color: #fff" class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Menú principal -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <!-- Strings que llenarás -->
+                                <li class="nav-item menuItem"><a class="nav-link" href="#"></a></li>
+                                <li class="nav-item menuItem"><a class="nav-link" href="#"></a></li>
+                                <li class="nav-item menuItem"><a class="nav-link" href="#"></a></li>
+                                <li class="nav-item menuItem finalItem"><a class="nav-link" href="#"></a></li>
+                                <!-- Íconos de redes sociales -->
+                                <li class="nav-item">
+                                    <a href="https://www.facebook.com/people/Sierra-Ec/61552671707662/?mibextid=LQQJ4d" target="_blank" class="nav-link"><i class="bi bi-facebook text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/sierra_ecu/" target="_blank" class="nav-link"><i class="bi bi-instagram text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.youtube.com/@Sierra-Ecuador" target="_blank" class="nav-link"><i class="bi bi-youtube text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item" >
+                                    <a href="https://api.whatsapp.com/send?phone=593987938964" target="_blank" class="nav-link"><i class="bi bi-whatsapp text-yellow icon"></i></a>
+                                </li>
+                                <!-- Botón personalizado -->
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle btn-custom" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/imgs/spain.png" alt="Español" class="bandera" width="10%"> Español <!-- Bandera y texto por defecto -->
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li id="changeEs"><a class="dropdown-item" href="#"> <img src="./assets/imgs/spain.png" alt="Español" class="bandera" width="10%"> Español</a></li>
+                                            <li id="changeEn"><a class="dropdown-item" href="#"> <img src="./assets/imgs/united-states.png" alt="English" class="bandera" width="10%"> English</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="welcomeSecction">
+                    <h1 id="welcome"></h1>
+                    <p id="welcomeText" ></p>
+                    <button type="button" class="reservaAhora" id="reservaAhora" aria-expanded="false"></button>
+                </div>
+                <section id="pasos">
+                    <h2 id="tresPasos"></h2>
+                    <div class="container-fluid mi-container">
+                        <div class="row">
+                            <div class="col-md-3 mi-columna"><i class="bi bi-1-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
+                            <div class="col-md-4 mi-columna"><i class="bi bi-2-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                            <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
+                            <div class="col-md-3 mi-columna"><i class="bi bi-3-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                        </div>
+                    </div> 
+                </section>
+            </div>
+        </div>  
+    </header>
+    <section id="aDondeIr">
+        <p id="adondeText"></p>
+        <h3 id="destinosTop"></h3>
+        <div class="swiper mySwiper" style="z-index: -2;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/imgs/Volcanes.jpeg" alt="Paquete Volcanes" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Tarqui.jpeg" alt="Paquete Tarqui" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Ona.jpeg" alt="Paquete Ona" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Galapagos_2.jpeg" alt="Paquete Galapagos_2" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Galapagos.jpeg" alt="Paquete Galapagos" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Cuyabeno.jpeg" alt="Paquete Cuyabeno" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Chimborazo.jpeg" alt="Paquete Chimborazo" class="imgCarusel"></div>
+              <div class="swiper-slide"><img src="./assets/imgs/Banos.jpeg" alt="Paquete Banos" class="imgCarusel"></div>
+              <!-- ... -->
+            </div>
+            <div class="swiper-pagination" style="margin-top: 30px;"></div>
+        </div>
+        <button id="btnReservaAhora" type="button"></button>
+    </section>
+    <section id="somosSierra">
+        <div class="container custom-container" id="iconosViajeEc">
+            <div class="row">
+              <!-- Primer elemento -->
+              <div class="col-md-6">
+                <!-- Sub-grid dentro del primer elemento -->
+                <div class="row">
+                  <div class="col-md-12 custom-item" style="display: flex; justify-content: center; align-items: center;"><i class="bi bi-pin-map-fill somosIcon"></i></div>
+                  <div class="col-md-12 custom-item"><p class="mapa" style="font-size: 30px; font-weight: bold;"></p><p class="mapa" style="font-size: 20px;"></p></div>
+                </div>
+              </div>
+              <!-- Segundo elemento -->
+              <div class="col-md-6">
+                <!-- Sub-grid dentro del segundo elemento -->
+                <div class="row">
+                  <div class="col-md-12 custom-item" style="display: flex; justify-content: center; align-items: center;"><i class="bi bi-backpack2-fill somosIcon"></i></div>
+                  <div class="col-md-12 custom-item"><p class="mochilla" style="font-size: 30px; font-weight: bold;"></p><p class="mochilla" style="font-size: 20px;"></p></div>
+                </div>
+              </div> 
+            </div>
+        </div>
+        <div class="container custom-container">
+            <div class="row">
+              <!-- Primer elemento -->
+              <div class="col-md-6">
+                <!-- Sub-grid dentro del primer elemento -->
+                <div id="somosTextCont">
+                    <h4 class="somosSierraEc" style="font-size: 35px; font-weight: bold;"></h4>
+                    <p class="somosSierraEc" style="font-size: 20px;"></p>
+                    <p class="somosSierraEc" style="font-size: 20px; font-weight: bold;"></p>
+                </div>
+              </div>
+              <!-- Segundo elemento -->
+              <div class="col-md-6">
+                <!-- Sub-grid dentro del segundo elemento -->
+                <div class="row">
+                    <div style="max-width: 100%; margin: 0 auto;">
+                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/DzQO2T0dCNs&t" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+              </div> 
+            </div>
+        </div>
+    </section>
+    <section id="nuestrosDestinos">
+        <p id="subtituloNuestrosDestinos"></p>
+        <h3 id="nuestrosDestinosText"></h3>
+        <div id="galleriasSitios">
+            <div id="sanCristoContainer">
+                <div class="container" style="width: 100%;">
+                    <div class="row">
+                      <!-- Primer elemento -->
+                      <div class="col-md-6">
+                        <img src="./assets/imgs/iguanaGalapagos.jpg" alt="Sierra Galapagos San Cristobal" class="imgsDestinos">
+                      </div>
+                      <!-- Segundo elemento -->
+                      <div class="col-md-6 sanText">
+                        <div>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <span class="bi bi-star-fill text-warning"></span>
+                        </div>
+                        <h4 style="font-size: 30px; color: #f25b6b;" class="sanCristo"></h4>
+                        <p style="font-size: 20px; color: #343e47;" class="sanCristo"></p>
+                        <button class="botonSanCristo sanCristo" type="button"></button>
+                      </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="cuyabenoContainer">
+                <div class="container" style="width: 100%;">
+                    <div class="row">
+                        <!-- Primer elemento -->
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/cuyabenoSierraEc.jpg" alt="Sierra Galapagos Cuyabeno" class="imgsDestinos">
+                        </div>
+                        <!-- Segundo elemento -->
+                        <div class="col-md-6 sanText">
+                            <div>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                            </div>
+                            <h4 style="font-size: 30px; color: #f25b6b;" class="cuyabeno"></h4>
+                            <p style="font-size: 20px; color: #343e47;" class="cuyabeno"></p>
+                            <button class="botonSanCristo cuyabeno" type="button"></button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="santaCruzContainer">
+                <div class="container" style="width: 100%;">
+                    <div class="row">
+                        <!-- Primer elemento -->
+                        <div class="col-md-6">
+                            <img src="./assets/imgs/tortugaGalapagos.jpg" alt="Sierra Galapagos Santa Cruz" class="imgsDestinos">
+                        </div>
+                        <!-- Segundo elemento -->
+                        <div class="col-md-6 sanText">
+                            <div>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                                <span class="bi bi-star-fill text-warning"></span>
+                            </div>
+                            <h4 style="font-size: 30px; color: #f25b6b;" class="sanCruz"></h4>
+                            <p style="font-size: 20px; color: #343e47;" class="sanCruz"></p>
+                            <button class="botonSanCristo sanCruz" type="button"></button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cuatroMundos">
+        <div class="container" id="cuatroMundosContainer">
+            <div class="row">
+                <!-- Primer elemento -->
+                <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
+                    <div id="textContainer4Mundos">
+                        <h4 style="color: #f25b6b; font-size: 40px; font-weight: bold;" class="text4Mundos"></h4>
+                        <p style="color: #343e47; font-size: 25px;" class="text4Mundos"></p>
+                        <ul id="list4mundos">
+
+                        </ul>
+                        <button id="btnExploralo" type="button"></button>
+                    </div>
+                </div>
+                <!-- Segundo elemento -->
+                <div class="col-md-6" id="imagenes4Mundos">
+                    <div class="container" style="width: 100%;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="./assets/imgs/sierraEcuador.jpg" alt="Sierra" class="imgsMundos">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./assets/imgs/amazonasSierraEc.jpg" alt="Imagen Amazonas" class="imgsMundos">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./assets/imgs/costaSierra.jpg" alt="Imagen Costa" class="imgsMundos">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./assets/imgs/sierraEcIguana.jpg" alt="Imagen Galapagos" class="imgsMundos">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section id="testimonios">
+        <p style="font-size: 20px; color: #343e47; margin: 0px 0px 0px 0px; text-align: center;" class="testimoniosTitulos"></p>
+        <h3 style="font-size: 40px; color: #f25b6b; margin-bottom: 50px; text-align: center;" class="testimoniosTitulos"></h3>
+        <div class="container" style="width: 100%;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="cardTestimonio">
+                        <img src="./assets/imgs/MateoTestimonio.webp" alt="Imagen Mateo" class="imgsCard">
+                        <h5 style="font-size: 30px; color: #f25b6b; text-align: center; font-weight: bold;">Mateo</h5>
+                        <p class="textTestimonio"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="cardTestimonio">
+                        <img src="./assets/imgs/FamiliaBravoTestimonio.webp" alt="Imagen Familia Bravo" class="imgsCard">
+                        <h5 style="font-size: 30px; color: #f25b6b; text-align: center; font-weight: bold;">Familia Bravo</h5>
+                        <p class="textTestimonio"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footerSecction">
+            <div class="container" style="width: 90%; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 footerPart">
+                        <img src="./assets/imgs/logoSierraSinfondoAzul.png" alt="Logo Sierra" width="40%">
+                    </div>
+                    <div class="col-md-4 footerPart">
+                        <i class="bi bi-geo-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-4 footerPart">
+                        <i class="bi bi-phone-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                        <i class="bi bi-phone-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                </div>
+            </div>
+            <p class="copyRight">&copy;<span class="copyRight"></span></p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./setLangBar.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+import inicioEs from './lenguajes/es/esInicio.js';
+import inicioEn from './lenguajes/en/enInicio.js';
+
+const elements = document.getElementsByClassName('nav-link');
+const pasos = document.getElementsByClassName('paso');
+const mochilla = document.getElementsByClassName('mochilla');
+const mapa = document.getElementsByClassName('mapa');
+const somosSierraEc = document.getElementsByClassName('somosSierraEc');
+const sanCristo = document.getElementsByClassName('sanCristo');
+const sanCruz = document.getElementsByClassName('sanCruz');
+const cuyabeno = document.getElementsByClassName('cuyabeno');
+const cuatroMundos = document.getElementsByClassName('text4Mundos');
+const testimoniosTitulos = document.getElementsByClassName('testimoniosTitulos');
+const textTestimonios = document.getElementsByClassName('textTestimonio');
+const tituloFooter = document.getElementsByClassName('tituloFooter');
+const textoSecFooter = document.getElementsByClassName('textoSecFooter');
+
+let currentLang = 'es';
+
+var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+  });
+
+document.getElementById("changeEn").onclick = () => cambiarIdioma('en');
+document.getElementById("changeEs").onclick = () => cambiarIdioma('es');
+
+function cambiarIdioma(idioma) {
+    var dropdownBtn = document.getElementById('dropdownMenuButton');
+    var banderaImg = document.querySelector('.bandera');
+    if (idioma === 'es' && currentLang !== 'es') {
+        dropdownBtn.innerHTML = '<img src="./assets/imgs/spain.png" alt="Español" class="bandera" width="10"%> Español';
+        banderaImg.src = './assets/imgs/spain.png';
+        currentLang = 'es';
+        document.getElementById('sierraEcAllPage').lang = 'es';
+        idiomaText(inicioEs);
+    } else if (idioma === 'en' && currentLang !== 'en') {
+        dropdownBtn.innerHTML = '<img src="./assets/imgs/united-states.png" alt="English" class="bandera" width="10%"> English';
+        banderaImg.src = './assets/imgs/united-states.png';
+        currentLang = 'en';
+        document.getElementById('sierraEcAllPage').lang = 'en';
+        idiomaText(inicioEn);
+    }
+}
+
+const idiomaText = (inicio) => {
+    elements[0].innerHTML = inicio.inicio;
+    elements[1].innerHTML = inicio.paquetes;
+    elements[2].innerHTML = inicio.nosotros;
+    elements[3].innerHTML = inicio.contactanos;
+    document.getElementById('welcome').innerText = inicio.welcomeMessage;
+    document.getElementById('welcomeText').innerText = inicio.subtitloWelcomeMessage;
+    document.getElementById('reservaAhora').innerText = inicio.botonViajamos;
+    document.getElementById("tresPasos").innerText = inicio.pasosMensaje;
+    pasos[0].innerHTML = inicio.pasos[0];
+    pasos[1].innerHTML = inicio.pasos[1];
+    pasos[2].innerHTML = inicio.pasos[2];
+    document.getElementById('adondeText').innerText = inicio.aDondeIr;
+    document.getElementById('destinosTop').innerText = inicio.destinosTop;
+    document.getElementById('btnReservaAhora').innerText = inicio.btnReserva;
+    mapa[0].innerHTML = inicio.vuelaPorEcuador[0];
+    mapa[1].innerHTML = inicio.vuelaPorEcuador[1];
+    mochilla[0].innerHTML = inicio.paquetesIncluyen[0];
+    mochilla[1].innerHTML = inicio.paquetesIncluyen[1];
+    somosSierraEc[0].innerHTML = inicio.noEsperesMas[0];
+    somosSierraEc[1].innerHTML = inicio.noEsperesMas[1];
+    somosSierraEc[2].innerHTML = inicio.noEsperesMas[2];
+    document.getElementById('subtituloNuestrosDestinos').innerText = inicio.tripsGallery[0];
+    document.getElementById('nuestrosDestinosText').innerText = inicio.tripsGallery[1];
+    sanCristo[0].innerHTML = inicio.galerias.SanCristobal[0];
+    sanCristo[1].innerHTML = inicio.galerias.SanCristobal[1];
+    sanCristo[2].innerHTML = inicio.galerias.SanCristobal[2];
+    sanCruz[0].innerHTML = inicio.galerias.SantaCruz[0];
+    sanCruz[1].innerHTML = inicio.galerias.SantaCruz[1];
+    sanCruz[2].innerHTML = inicio.galerias.SantaCruz[2];
+    cuyabeno[0].innerHTML = inicio.galerias.Cuyabeno[0];
+    cuyabeno[1].innerHTML = inicio.galerias.Cuyabeno[1];
+    cuyabeno[2].innerHTML = inicio.galerias.Cuyabeno[2];
+    cuatroMundos[0].innerHTML = inicio.cuatroMundos[0];
+    cuatroMundos[1].innerHTML = inicio.cuatroMundos[1];
+    document.getElementById('list4mundos').innerHTML = '';
+    inicio.cuatroMundosLista.forEach(element => {
+        const li = document.createElement('li');
+        li.innerText = element;
+        li.style.fontSize = '25px';
+        document.getElementById('list4mundos').appendChild(li);
+    });
+    document.getElementById('btnExploralo').innerText = inicio.botonExploro;
+    testimoniosTitulos[0].innerHTML = inicio.testimoniosTitulo[0];
+    testimoniosTitulos[1].innerHTML = inicio.testimoniosTitulo[1];
+    textTestimonios[0].innerHTML = inicio.testimonios[0];
+    textTestimonios[1].innerHTML = inicio.testimonios[1];
+    tituloFooter[0].innerHTML = inicio.footer.secciones[0].titulo;
+    tituloFooter[1].innerHTML = inicio.footer.secciones[1].titulo;
+    tituloFooter[2].innerHTML = inicio.footer.secciones[2].titulo;
+    tituloFooter[3].innerHTML = inicio.footer.secciones[3].titulo;
+    textoSecFooter[0].innerHTML = inicio.footer.secciones[0].texto;
+    textoSecFooter[1].innerHTML = inicio.footer.secciones[1].texto;
+    textoSecFooter[2].innerHTML = inicio.footer.secciones[2].texto;
+    textoSecFooter[3].innerHTML = inicio.footer.secciones[3].texto;
+    textoSecFooter[4].innerHTML = inicio.footer.lastPart[0].texto;
+    textoSecFooter[5].innerHTML = inicio.footer.lastPart[1].texto;
+    textoSecFooter[6].innerHTML = inicio.footer.lastPart[2].texto;
+    document.getElementsByClassName('copyRight')[1].innerHTML = inicio.footer.derechos;
+}
+
+idiomaText(inicioEs);
+
