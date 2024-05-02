@@ -810,6 +810,18 @@ footer {
         margin: 40px 0px;
     }
 
+    #textContainer4Mundos h4 {
+        font-size: 30px;
+    }
+
+    #textContainer4Mundos p {
+        font-size: 20px;
+    }
+
+    #textContainer4Mundos ul {
+        font-size: 20px;
+    }
+
     #imagenes4Mundos {
         display: none;
     }
