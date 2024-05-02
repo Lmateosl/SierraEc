@@ -606,12 +606,13 @@ footer {
 #bannerSierra {
     position: relative;
     width: 100%;
-    min-height: 100vh; /* Altura del banner (ajustar según necesidades) */
+    min-height: 950px; /* Altura del banner (ajustar según necesidades) */
     background-color: #343e47;
     background-image: url('./assets/imgs/imagenViajeFondo.jpg'); /* URL de la imagen de fondo */
     background-size: cover;
     background-position: bottom;
     margin: 0px;
+    height: 100vh;
 }
 
 #bannerSierra::before {
@@ -647,11 +648,12 @@ footer {
 #welcomeTextSierra {
     text-align: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 50px;
     text-shadow: 2px 2px 8px rgba(52,62,70,1);
     font-weight: bold;
+    margin-top: 150px;
 }
 
 #welcomeSierra {
@@ -662,6 +664,8 @@ footer {
     margin-bottom: 30px;
     text-shadow: 1px 1px 12px rgba(52,62,70,1);
     font-family: 'sierraEc' !important;
+    margin-top: 85px;
+    display: none;
 }
 
 .cardTipoSierra {
@@ -864,6 +868,7 @@ footer {
 
     #welcomeSierra {
         font-size: 30px;
+        text-shadow: none;
     }
 
     #welcomeTextSierra {
