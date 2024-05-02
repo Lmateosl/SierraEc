@@ -21,13 +21,25 @@
 
 @keyframes fadeIn {
     0% {
+        background-color: rgba(234,223,33,1); 
+    }
+    50% {
+        background-color: rgba(234,223,33,1); 
+    }
+    100% {
+        background-color: rgba(52,62,70,0.2); 
+    }
+}
+
+@keyframes fadeInSierra {
+    0% {
         background-color: rgba(52,62,70,1); 
     }
     50% {
         background-color: rgba(52,62,70,1); 
     }
     100% {
-        background-color: rgba(52,62,70,0.3); 
+        background-color: rgba(52,62,70,0.4); 
     }
 }
 
@@ -36,6 +48,10 @@
     to { opacity: 1; }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/*Pagina Sierra Ec Inicio*/
 body {
     width: 100%;
     margin: 0px;
@@ -47,24 +63,23 @@ h1, h2, h3, h4, h5 {
     font-family: 'Kepler' !important;
 }
 
+/*header page*/
 header {
     width: 100%;
     margin: 0px;
 }
 
-/* Estilos para el banner */
 #banner {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Altura del banner (ajustar según necesidades) */
     background-color: #343e47;
-    background-image: url('./assets/imgs/imagenViajeFondo.jpg'); /* URL de la imagen de fondo */
+    background-image: url('./assets/imgs/Banner-Principal_2.jpg'); /* URL de la imagen de fondo */
     background-size: cover;
-    background-position:bottom;
+    background-position:center;
     margin: 0px;
 }
 
-/* Estilos para la capa de opacidad */
 #banner::before {
     content: "";
     position: absolute;
@@ -77,7 +92,6 @@ header {
     animation-fill-mode: forwards;
 }
 
-/* Estilos para el contenido del banner */
 .banner-content {
     position: relative; /* Para que los elementos se posicionen en relación al banner */
     z-index: 1; /* Coloca el contenido encima de la capa de opacidad */
@@ -86,7 +100,6 @@ header {
     padding: 50px; /* Espaciado interno del contenido */
 }
 
-/* Estilos personalizados para la barra de navegación */
 nav {
     position: fixed;
     width: 80%;
@@ -158,7 +171,7 @@ nav {
     background-color: #f25b6b !important;
 }
 
-/*Body*/
+/*Body Welcome amigo*/
 #welcomeSecction {
     width: 50%;
     margin: 130px auto 30px auto;
@@ -168,19 +181,21 @@ nav {
     text-align: center;
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
     margin-bottom: 30px;
-    text-shadow: 6px 6px 12px rgba(52,62,70,1);
     font-weight: bold;
+    display: none;
+    background-color: #343e47;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 #welcome {
     text-align: center;
     color: #fff;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 30px;
-    text-shadow: 3px 3px 12px rgba(52,62,70,1);
+    text-shadow: 1px 1px 12px rgba(52,62,70,1);
 }
 
 #reservaAhora {
@@ -308,14 +323,14 @@ nav {
 
 #adondeText {
     text-align: center;
-    color: #f25b6b;
+    color: #343e47;
     font-size: 20px;
     margin-bottom: 0px;
 }
 
 #destinosTop {
     text-align: center;
-    color: #343e47;
+    color: #f25b6b;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -339,6 +354,8 @@ nav {
     border: 2px solid #f25b6b !important;
     color: #fff !important;
 }
+
+/*Somo sierra section*/
 
 #somosSierra {
     background-color: #343e47;
@@ -453,32 +470,37 @@ nav {
     color: #fff !important;
 }
 
+/*Cuatro Mundos section*/
 #cuatroMundos {
-    background-image: url('./assets/imgs/FonsoArena.jpg'); /* URL de la imagen de fondo */
-    background-size: cover;
-    background-position:center;
+    background-color: #343e47;
+    border-radius: 10%;
     width: 100%;
-    animation-name: fadeInImgs;
     animation-duration: 1.5s; /* Duración de la animación */
     animation-fill-mode: forwards;
 }
 
 #cuatroMundosContainer {
     width: 80%;
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
 }
 
 #textContainer4Mundos {
     text-align: left;
 }
 
+#list4mundos {
+    color: #fff;
+}
+
 .imgsMundos {
     border-radius: 10px;
-    box-shadow: 2px 2px 10px 2px rgba(148,148,148,1);
     width: 100%;
     height: 290px;
     margin-bottom: 20px;
     margin-top: 20px;
+    animation-name: fadeInImgs;
+    animation-duration: 1.5s; /* Duración de la animación */
+    animation-fill-mode: forwards;
 }
 
 #imagenes4Mundos {
@@ -503,10 +525,14 @@ nav {
     color: #f25b6b !important;
 }
 
+/*Testimonios section*/
 #testimonios {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 60px;
+    padding-top: 30px;
+    background-color: #fff;
+    border-radius: 20% 20% 0px 0px;
 }
 
 .textTestimonio {
@@ -575,13 +601,142 @@ footer {
     margin: 0px;
 }
 
+/*Pagina Sierra Full Ininicio*/
+/*Banner Secction*/
+#bannerSierra {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Altura del banner (ajustar según necesidades) */
+    background-color: #343e47;
+    background-image: url('./assets/imgs/imagenViajeFondo.jpg'); /* URL de la imagen de fondo */
+    background-size: cover;
+    background-position: bottom;
+    margin: 0px;
+}
+
+#bannerSierra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Color amarillo con opacidad */
+    animation-name: fadeInSierra;
+    animation-duration: 3s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+.banner-contentSierra {
+    position: relative; /* Para que los elementos se posicionen en relación al banner */
+    z-index: 1; /* Coloca el contenido encima de la capa de opacidad */
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+}
+
+/*Body Secction*/
+#welcomeSecctionSierra {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcomeTextSierra {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 8px rgba(52,62,70,1);
+    font-weight: bold;
+}
+
+#welcomeSierra {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 12px rgba(52,62,70,1);
+    font-family: 'sierraEc' !important;
+}
+
+.cardTipoSierra {
+    width: 80%;
+    height: 435px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #343e47;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textTipoSierra {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0px;
+}
+
+.btnSierraTipo {
+    min-width: 90%;
+    color: #fff;
+    background-color: #f25b6b;
+    border: 4px solid #f25b6b;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btnSierraTipo:hover {
+    color: #f25b6b !important;
+    background-color: #fff !important;
+    border: 4px solid #fff !important;
+}
+
 @media (max-width: 1000px) {
-    #pasos {
-        display: none;
+    /*Pagina Sierra Ec Inicio*/
+    /*Baneer*/
+    .banner-content {
+        padding: 15px;
+    }
+
+    #banner {
+        min-height: 400px;
+    }
+
+    #bannerSierra {
+        min-height: 400px;
+    }
+
+    /*Nav Section*/
+    nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        margin: 0px !important;
     }
 
     #hambuergesa {
         border: 2px solid #fff;
+    }
+
+    .finalItem {
+        margin-right: 0px;
+    }
+
+    /*Welcome Section*/
+    #pasos {
+        display: none;
     }
 
     #welcome {
@@ -592,24 +747,13 @@ footer {
         display: none;
     }
 
-    nav {
-        width: 100%;
-    }
-
-    .nav-link {
-        margin: 0px !important;
-    }
-
     #welcomeSecction { 
         width: 100%;
     }
 
-    .banner-content {
-        padding: 15px;
-    }
-
-    #banner {
-        min-height: 400px;
+    /*Destinos Top Section*/
+    #destinosTop {
+        font-size: 30px;
     }
 
     #somosSierra {
@@ -647,12 +791,13 @@ footer {
         margin-top: 5px;
     }
 
-    .finalItem {
-        margin-right: 0px;
-    }
-
     .imgsDestinos {
         width: 100%;
+    }
+
+    /*Cuatro mundos section*/
+    #cuatroMundos {
+        border-radius: 70px;
     }
 
     #cuatroMundosContainer {
@@ -673,6 +818,7 @@ footer {
         text-align: left;
     }
 
+    /*Testimonios section*/
     #testimonios {
         width: 100%;
         padding-bottom: 20px;
@@ -683,11 +829,37 @@ footer {
         width: 90%;
     } 
 
+    /*Footer Section*/
     footer {
         border-radius: 30px 30px 0px 0px;
     }
 
     .footerPart {
         text-align: center;
+    }
+
+    /*Pagina Sierra Full Inicio*/
+    /*Baneer*/
+    #bannerSierra {
+        min-height: 1300px;
+        padding-top: 260px;
+    }
+
+    /*Body Secction*/
+    #welcomeSecctionSierra {
+        width: 98%;
+    }
+
+    #welcomeSierra {
+        font-size: 30px;
+    }
+
+    #welcomeTextSierra {
+        font-size: 17px;
+    }
+
+    .cardTipoSierra {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
