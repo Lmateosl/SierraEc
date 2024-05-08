@@ -56,7 +56,6 @@ function cambiarIdioma(idioma, isReload) {
 const idiomaText = (sierra) => {
     elements[0].innerHTML = sierra.nav[0];
     elements[1].innerHTML = sierra.nav[1];
-    document.getElementById('welcomeSierra').innerText = sierra.body.titulo;
     document.getElementById('welcomeTextSierra').innerText = sierra.body.subtitulo;
     textTipoSierra[0].innerHTML = sierra.body.descubre.sierraEc[0];
     textTipoSierra[1].innerHTML = sierra.body.descubre.sierraPlus[0];

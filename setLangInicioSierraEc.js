@@ -10,11 +10,15 @@ const somosSierraEc = document.getElementsByClassName('somosSierraEc');
 const sanCristo = document.getElementsByClassName('sanCristo');
 const sanCruz = document.getElementsByClassName('sanCruz');
 const cuyabeno = document.getElementsByClassName('cuyabeno');
+const reservaAhora = document.getElementsByClassName('reservaAhora');
 const cuatroMundos = document.getElementsByClassName('text4Mundos');
 const testimoniosTitulos = document.getElementsByClassName('testimoniosTitulos');
 const textTestimonios = document.getElementsByClassName('textTestimonio');
 const tituloFooter = document.getElementsByClassName('tituloFooter');
 const textoSecFooter = document.getElementsByClassName('textoSecFooter');
+const titleDestCar = document.getElementsByClassName("titleDestCar");
+const cardDestText = document.getElementsByClassName("cardDestText");
+const btnCards = document.getElementsByClassName("btnCards");
 
 const navbarCollapse = document.getElementById('navbarNav');
 
@@ -100,8 +104,9 @@ const idiomaText = (inicio) => {
     elements[2].innerHTML = inicio.nosotros;
     elements[3].innerHTML = inicio.contactanos;
     document.getElementById('welcome').innerText = inicio.welcomeMessage;
+    reservaAhora[0].innerHTML = inicio.botonViajamos;
     document.getElementById('welcomeText').innerText = inicio.subtitloWelcomeMessage;
-    document.getElementById('reservaAhora').innerText = inicio.botonViajamos;
+    reservaAhora[1].innerHTML = inicio.botonViajamos;
     document.getElementById("tresPasos").innerText = inicio.pasosMensaje;
     pasos[0].innerHTML = inicio.pasos[0];
     pasos[1].innerHTML = inicio.pasos[1];
@@ -153,6 +158,18 @@ const idiomaText = (inicio) => {
     textoSecFooter[5].innerHTML = inicio.footer.lastPart[1].texto;
     textoSecFooter[6].innerHTML = inicio.footer.lastPart[2].texto;
     document.getElementsByClassName('copyRight')[1].innerHTML = inicio.footer.derechos;
+    titleDestCar[0].innerHTML = inicio.cardsDestinos.destinosTop[0];
+    titleDestCar[1].innerHTML = inicio.cardsDestinos.ecuador[0];
+    titleDestCar[2].innerHTML = inicio.cardsDestinos.galapagos[0];
+    titleDestCar[3].innerHTML = inicio.cardsDestinos.turquia[0];
+    cardDestText[0].innerHTML = inicio.cardsDestinos.destinosTop[1];
+    cardDestText[1].innerHTML = inicio.cardsDestinos.ecuador[1];
+    cardDestText[2].innerHTML = inicio.cardsDestinos.galapagos[1];
+    cardDestText[3].innerHTML = inicio.cardsDestinos.turquia[1];
+    btnCards[0].innerHTML = inicio.cardsDestinos.btn;
+    btnCards[1].innerHTML = inicio.cardsDestinos.btn;
+    btnCards[2].innerHTML = inicio.cardsDestinos.btn;
+    btnCards[3].innerHTML = inicio.cardsDestinos.btn;
 }
 
 const storeLang = window.localStorage.getItem('lang');
@@ -188,4 +205,7 @@ window.onscroll = ({target}) => {
     }
 }
 
+const testFunction = a => {
+    console.log(a);
+}
 

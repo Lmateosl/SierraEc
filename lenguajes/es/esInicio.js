@@ -1,31 +1,38 @@
 const inicio = {
     inicio: "INICIO",
-    paquetes: "PAQUETES",
+    paquetes: "DESTINOS",
     nosotros: "NOSOTROS",
     contactanos: "CONTACTOS",
     botonReservaAhora: "Reserva Ahora",
     btnLang: "",
     "welcomeMessage": "¡Siente la alegría de la vida, comienza un nuevo viaje!",
-    "subtitloWelcomeMessage": "Ecuador es un país megadiverso, lleno de magia en sus paisajes, tiene lagos, lagunas, montañas, volcanes, playas, ríos y selvas. Un país pluricultural, con costumbres, tradiciones y saberes; un país con gastronomía exquisita y mucho más. ¿Te atreves a conocer Ecuador?",
+    "subtitloWelcomeMessage": "¡Descubre la maravilla de Ecuador! Sumérgete en un mundo de diversidad sin igual, donde cada rincón te sorprende con su encanto natural. Desde majestuosos volcanes hasta playas de ensueño, pasando por exuberantes selvas y una rica herencia cultural. Disfruta de nuestra gastronomía única y déjate cautivar por la magia que solo Ecuador puede ofrecer. ¿Estás listo para vivir una aventura inolvidable?",
     "botonViajamos": "¿VIAJAMOS?",
-    "pasosMensaje": "TRES PASOS PARA COMENZAR TU VIAJE",
+    "pasosMensaje": "¡Prepara tu aventura en tres simples pasos!",
     "pasos": [
-        "Elige el o los destinos que quieres conocer en tu viaje por Ecuador.",
-        "Ten claro cuántos días puedes destinar a tu viaje y cuantas personas conformarán tu grupo.",
-        "Escríbenos a través de nuestros canales de atención y te enviaremos una propuesta de viaje armada solamente para ti."
+        "Selecciona los destinos que deseas explorar en tu viaje por Ecuador.",
+        "Planifica la duración de tu aventura y cuéntanos cuántos acompañantes serán.",
+        "¡Contáctanos hoy y te enviaremos una propuesta personalizada para tu viaje de ensueño!"
     ],
     "aDondeIr": "¿A DÓNDE IR?",
-    "destinosTop": "DESTINOS TOP",
+    "destinosTop": "Descubre Los Mejores Destinos",
     btnReserva: "¡Reserva ahora!",
-    "vuelaPorEcuador": ["Vuelta por todo el Ecuador", 
-    "4 regiones en un solo viaje: \nGalápagos, Costa, Sierra y Amazonia."],
-    "paquetesIncluyen": ["Nuestros paquetes incluyen",
-    "Alimentación completa tipo menú, traslados hacia las excursiones y actividades, guía autorizado y mucho más."],
+    "vuelaPorEcuador": ["Descubre a Ecuador en un viaje único", 
+    "Vive una aventura inolvidable viajando a través de las cuatro regiones del país:\nGalápagos, Costa, Sierra y Amazonía."],
+    "paquetesIncluyen": ["¡Experiencia completa!, esto incluye nuestros paquetes:",
+    "Te ofrecemos aventuras únicas, con alimentación completa tipo menú, traslados a las excursiones y actividades, guía autorizado y mucho más."],
     "noEsperesMas": ["Somos SierraEC",
-    "Ecuador es un país mega diverso, y a través de nuestros paquetes de turismo especializados podrás conocer cada rincón.",
-    "¡No esperes más y escápate a tu próxima aventura!"],
+    "Ecuador es un país megadiverso, y a través de nuestros paquetes de turismo especializados podrás conocer cada rincón.",
+    "¡Aprovecha ahora y embárcate en tu próxima aventura!"],
     "tripsGallery": ["TRIPS GALLERY",
         "Nuestros Destinos"],
+    cardsDestinos: {
+        destinosTop: ["Destinos Top", "Explora nuestros destinos más destacados y descubre experiencias inolvidables en todo el mundo."],
+        ecuador: ["Ecuador", "Sumérgete en la belleza natural y la rica cultura de Ecuador, desde sus montañas hasta sus playas tropicales."],
+        galapagos: ["Galápagos", "Descubre las islas Galápagos, un paraíso único lleno de vida silvestre extraordinaria y paisajes maravillosos."],
+        turquia: ["Turquía", "Embárcate en una aventura a través de Turquía, donde la historia antigua se mezcla con la modernidad en una tierra llena de maravillas."],
+        btn: "Ver Destinos"
+    },
     "galerias": {
         "SantaCruz": [
             "Santa Cruz | Galápagos",
@@ -44,8 +51,8 @@ const inicio = {
         ]
     },
     "cuatroMundos": [
-        "CUATRO \nMUNDOS",
-        "Ecuador es un país conocido por su diversidad geográfica y climática, que a menudo se describe como “los cuatro mundos” debido a sus cuatro regiones principales:"
+        "¡Descubre los Cuatro Mundos de Ecuador!",
+        "¡Bienvenido a Ecuador, donde la diversidad es nuestra carta de presentación! Sumérgete en un país que deslumbra con sus cuatro mundos: la majestuosa Sierra, el misterioso encanto de la Amazonía, las doradas costas de la Costa y las asombrosas Islas Galápagos. ¡Prepárate para vivir experiencias únicas en cada rincón de esta tierra llena de magia y aventura!"
     ],
     "cuatroMundosLista":[
         "SIERRA",
