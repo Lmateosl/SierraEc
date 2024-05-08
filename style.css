@@ -861,6 +861,14 @@ footer {
         animation-name: fadeInCelular;
     }
 
+    #imgBanner2::before {
+        background-color: rgba(52,62,71,0.7);
+    }
+
+    #imgBanner3::before {
+        background-color: rgba(52,62,71,0.7);
+    }
+
     #bannerSierra {
         min-height: 400px;
     }
@@ -898,6 +906,7 @@ footer {
 
     #welcome {
         font-size: 30px;
+        text-shadow: none;
     }
 
     #welcomeText {
