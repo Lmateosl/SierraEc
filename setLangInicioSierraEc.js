@@ -59,6 +59,34 @@ document.getElementById("changeEn").onclick = () => cambiarIdioma('en', true);
 document.getElementById("changeEs").onclick = () => cambiarIdioma('es', true);
 document.getElementById("changeGer").onclick = () => cambiarIdioma('ger', true);
 
+document.getElementById("cardMejoresDestinos").onclick = ({currentTarget}) => {
+    currentTarget.children[0].setAttribute('hidden', '');
+}
+document.getElementById("cardMejoresDestinos").onmouseout = ({currentTarget}) => {
+    currentTarget.children[0].removeAttribute('hidden');
+}
+
+document.getElementById("cardGalapagos").onclick = ({currentTarget}) => {
+    currentTarget.children[0].setAttribute('hidden', '');
+}
+document.getElementById("cardGalapagos").onmouseout = ({currentTarget}) => {
+    currentTarget.children[0].removeAttribute('hidden');
+}
+
+document.getElementById("cardEcuador").onclick = ({currentTarget}) => {
+    currentTarget.children[0].setAttribute('hidden', '');
+}
+document.getElementById("cardEcuador").onmouseout = ({currentTarget}) => {
+    currentTarget.children[0].removeAttribute('hidden');
+}
+
+document.getElementById("cardTurquia").onclick = ({currentTarget}) => {
+    currentTarget.children[0].setAttribute('hidden', '');
+}
+document.getElementById("cardTurquia").onmouseout = ({currentTarget}) => {
+    currentTarget.children[0].removeAttribute('hidden');
+}
+
 function cambiarIdioma(idioma, isReload) {
     var dropdownBtn = document.getElementById('dropdownMenuButton');
     var banderaImg = document.querySelector('.bandera');
