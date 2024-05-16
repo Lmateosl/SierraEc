@@ -7,7 +7,7 @@ const inicio = {
     btnLang: "",
     "welcomeMessage": "Feel the joy of life, start a new journey!",
     "subtitloWelcomeMessage": "Discover the wonder of Ecuador! Immerse yourself in a world of unparalleled diversity, where every corner surprises you with its natural charm. From majestic volcanoes to dreamy beaches, through lush jungles and a rich cultural heritage. Enjoy our unique gastronomy and let yourself be captivated by the magic that only Ecuador can offer. Are you ready for an unforgettable adventure?",
-    "botonViajamos": "TRAVEL WITH US?",
+    "botonViajamos": "TRAVEL NOW!",
     "pasosMensaje": "Prepare your adventure in three simple steps!",
     "pasos": [
         "Select the destinations you want to explore on your trip through Ecuador.",

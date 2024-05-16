@@ -846,7 +846,341 @@ footer {
     border: 4px solid #fff !important;
 }
 
+/*Pagina Nosotros*/
+/*Banner Inicio*/
+#imgBanner2Nosotros {
+    background-image: url('./assets/imgs/amazonasSierraEc.jpg');
+    animation-name: none !important;
+}
+
+#imgBanner2Nosotros::before {
+    background: linear-gradient(90deg, rgba(52,62,71,1) 30%, rgba(52,62,71,0) 100%);
+    animation-name: none !important;
+}
+
+#imgBanner3Nosotros {
+    background-image: url('./assets/imgs/sierraEcIguana.jpg');
+    animation-name: none !important;
+
+}
+
+#imgBanner3Nosotros::before {
+    background: linear-gradient(90deg, rgba(52,62,71,1) 30%, rgba(52,62,71,0) 100%);
+    animation-name: none !important;
+}
+
+#imgBanner4Nosotros {
+    background-image: url('./assets/imgs/sierraEcPlaya.jpg');
+    animation-name: none !important;
+
+}
+
+#imgBanner4Nosotros::before {
+    background: linear-gradient(90deg, rgba(52,62,71,1) 30%, rgba(52,62,71,0) 100%);
+    animation-name: none !important;
+} 
+
+#subtituloNosotros {
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'sierraEc' !important;
+}
+
+#segundaSlideTitleNosotros {
+    font-size: 35px;
+    color: #fff;
+    text-align: left;
+}
+
+.textoSegunda {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    font-family: 'sierraEc' !important;
+}
+
+.reservaAhoraNosotros {
+    background-color: #f25b6b !important; /* Fondo transparente para botón */
+    border: 2px solid #f25b6b !important;
+    color: #fff !important; /* Color de texto blanco para botón */
+    width: 160px;
+    border-radius: 5px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.reservaAhoraNosotros:hover {
+    border: 2px solid #fff !important;
+    color: #f25b6b !important;
+    background-color: #fff !important;
+}
+
+#pasosNosotros{
+    width: 90%;
+    margin: 60px auto 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #343e47;
+    font-size: 20px;
+    background-color: #343e47;
+}
+
+#quienesSomos {
+    color: #f25b6b;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#equipo {
+    width: 100%;
+    margin: 30px auto 20px auto;
+    padding: 0px;
+}
+
+.cardEquipo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miembroEquipo {
+    width: 98%;
+    height: 760px;
+    overflow-y: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 19px 1px rgba(150,150,150,1);
+    margin-bottom: 40px;
+}
+
+.miembroEquipo:hover {
+    box-shadow: 4px 4px 21px 2px rgba(150,150,150,1);
+}
+
+.imgEquipo {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.nombreEquipo {
+    color: #f25b6b;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.puestoEquipo {
+    color: #343e47;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'sierraEc' !important;
+    font-weight: bold;
+}
+
+.tituloEquipo {
+    color: #343e47;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'sierraEc' !important;
+}
+
+.descEquipo {
+    color: #343e47;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'sierraEc' !important;
+}
+
+.infoEquipo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'sierraEc' !important;
+    margin-top: 10px;
+}
+
+.iconoEquipo {
+    color: #f25b6b;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contactoEquipo {
+    color: #343e47;
+    margin-bottom: 10px;
+    font-family: 'sierraEc' !important;
+    font-size: 18px;
+}
+
+#porque {
+    color: #f25b6b;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+#video {
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid #fff;
+}
+
+.porqueTitle {
+    text-align: left;
+    color: #fff;
+    font-family: 'sierraEc' !important;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.porqueText {
+    text-align: left;
+    color: #fff;
+    font-family: 'sierraEc' !important;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#fraseFinal {
+    font-size: 34px;
+    color: #f25b6b;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/*contactanos section*/
+.iconoContactos {
+    font-size: 2rem;
+    color: #f25b6b;
+}
+.elementoContactos {
+    text-align: center;
+    padding: 20px;
+}
+
+.partesTitulos {
+    color: #343e47;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.partesTexto {
+    color: #343e47;
+    font-size: 20px;
+}
+
+#mapaImg {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #f25b6b;
+}
+
+#escribenos {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#escribenosSubtitle {
+    font-size: 19px;
+}
+
+#escribenosCatch {
+    font-size: 20px;
+    font-weight: bold;
+}
+label {
+    color: #343e47;
+    font-weight: bold;
+}
+
+.custom-input {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.custom-input:focus {
+    border: 2px solid #f25b6b !important;
+    box-shadow: none;
+}
+.submit-btn {
+    border: #f25b6b 4px solid;
+    background-color: #f25b6b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    min-width: 130px;
+    border-radius: 10px;
+}
+.submit-btn:hover {
+    border: #fff 4px solid;
+    background-color: #fff;
+    color: #f25b6b;
+    border: #f25b6b 4px solid;
+}
+
 @media (max-width: 1000px) {
+    /*Pagina contactos*/
+    #mapaImg {
+        display: none;
+    }
+
+    /*Pagina Nosotros*/
+    /*Banner Inicio*/
+    .porqueTitle {
+        text-align: center;
+    }
+
+    .porqueText {
+        text-align: center;
+    }
+
+    #video {
+        display: none;
+    }
+
+    #imgBanner2Nosotros::before {
+        background-color: rgba(52,62,71,0.7);
+    }
+
+    #imgBanner3Nosotros::before {
+        background-color: rgba(52,62,71,0.7);
+    }
+
+    #imgBanner4Nosotros::before {
+        background-color: rgba(52,62,71,0.7);
+    }
+
+    #pasosNosotros {
+        display: none;
+    }
+
+    #segundaSlideTitleNosotros {
+        text-align: center;
+    }
+    
+    .textoSegunda {
+        display: none;
+    }
+
+    .reservaAhoraNosotros {
+        margin: 20px auto;
+    }
     /*Pagina Sierra Ec Inicio*/
     /*Baneer*/
     .banner-content {

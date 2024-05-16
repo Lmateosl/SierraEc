@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es" id="sierraEcAllPage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/imgs/logoFavIcon.png" type="image/png">
+    <meta name="description" content="Explora destinos emocionantes en Ecuador, Galápagos y más, con paquetes baratos que hacen que tus sueños de viajar se hagan realidad. ¡Reserva, descubre y disfruta con nosotros!">
+    <meta property="og:title" content="NOSOTROS - SIERRA EC">
+    <meta property="og:description" content="Explora destinos emocionantes en Ecuador, Galápagos y más, con paquetes baratos que hacen que tus sueños de viajar se hagan realidad. ¡Reserva, descubre y disfruta con nosotros!">
+    <meta property="og:image" content="./assets/imgs/logoSierraEcAFOndomarilloAzul.jpeg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sierraec.com/">
+    <meta property="og:site_name" content="Sierra">
+    <meta property="og:locale" content="es_ES">
+    <meta name="author" content="Mateo Sanchez">
+    <!-- Etiqueta meta para palabras clave (opcional) -->
+    <meta name="keywords" content="palabra clave1, palabra clave2, palabra clave3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>NOSOTROS - SIERRA EC</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <!-- Barra de navegación -->
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-bg">
+                    <div class="container-fluid">
+                        <!-- Logo o imagen en la parte izquierda -->
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/imgs/logoSierraSinfondoAzul.png" alt="Logo Sierra Ec" class="logo-img" width="50%" style="border-radius: 5px;">
+                        </a>
+                        <!-- Botón de hamburguesa para dispositivos móviles -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hambuergesa">
+                            <span style="color: #fff" class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Menú principal -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <!-- Strings que llenarás -->
+                                <li class="nav-item menuItem"><a class="nav-link" href="./index.html"></a></li>
+                                <li class="nav-item menuItem"><a class="nav-link" href="#"></a></li>
+                                <li class="nav-item menuItem"><a class="nav-link" href="#"></a></li>
+                                <li class="nav-item menuItem finalItem"><a class="nav-link" href="./contactanos.html"></a></li>
+                                <!-- Íconos de redes sociales -->
+                                <li class="nav-item">
+                                    <a href="https://www.facebook.com/people/Sierra-Ec/61552671707662/?mibextid=LQQJ4d" target="_blank" class="nav-link"><i class="bi bi-facebook text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/sierra_ecu/" target="_blank" class="nav-link"><i class="bi bi-instagram text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.youtube.com/@Sierra-Ecuador" target="_blank" class="nav-link"><i class="bi bi-youtube text-yellow icon"></i></a>
+                                </li>
+                                <li class="nav-item" >
+                                    <a href="https://api.whatsapp.com/send?phone=593987938964" target="_blank" class="nav-link"><i class="bi bi-whatsapp text-yellow icon"></i></a>
+                                </li>
+                                <!-- Botón personalizado -->
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle btn-custom" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/imgs/spain.png" alt="Español" class="bandera" width="10%"> Español <!-- Bandera y texto por defecto -->
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li id="changeEs"><a class="dropdown-item" href="#"> <img src="./assets/imgs/spain.png" alt="Bandera de España" class="bandera" width="10%"> Español</a></li>
+                                            <li id="changeEn"><a class="dropdown-item" href="#"> <img src="./assets/imgs/united-states.png" alt="English Flag" class="bandera" width="10%"> English</a></li>
+                                            <li id="changeGer"><a class="dropdown-item" href="#"> <img src="./assets/imgs/germany.png" alt="Deutsch" class="bandera" width="10%"> Deutsch</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active banner" id="imgBanner4Nosotros" data-bs-interval="6000">
+            <div class="container banner-content" style="width: 100%;">
+                <div class="row">
+                  <!-- Primer elemento -->
+                  <div class="col-md-6">
+                    <h1 id="welcome"></h1>
+                    <p id="subtituloNosotros"></p>
+                  </div>
+                  <!-- Segundo elemento -->
+                  <div class="col-md-6 sanText">
+                  </div> 
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item banner" id="imgBanner2" data-bs-interval="6000">
+            <div class="container banner-content" style="width: 100%;">
+                <div class="row">
+                  <!-- Primer elemento -->
+                  <div class="col-md-12">
+                    <h2 id="segundaSlideTitleNosotros"></h2>
+                    <p class="textoSegunda"><strong class="negritaSegundaSlide"></strong><span class="textoSegundaSlide"></span></p>
+                    <p class="textoSegunda"><strong class="negritaSegundaSlide"></strong><span class="textoSegundaSlide"></span></p>
+                    <p class="textoSegunda"><strong class="negritaSegundaSlide"></strong><span class="textoSegundaSlide"></span></p>
+                    <p class="textoSegunda"><span class="textoSegundaSlide"></span><strong class="negritaSegundaSlide"></strong></p>
+                    <button type="button" class="reservaAhoraNosotros"></button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item banner" id="imgBanner3Nosotros" data-bs-interval="6000">
+            <section id="pasosNosotros" style="z-index: 1; position: relative;">
+                <h2 id="tresPasos"></h2>
+                <div class="container-fluid mi-container">
+                    <div class="row">
+                        <div class="col-md-3 mi-columna"><i class="bi bi-star-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                        <div class="col-md-3 mi-columna"><i class="bi bi-globe-americas numbers"></i> <p class="paso">Columna 1</p></div>
+                        <div class="col-md-3 mi-columna"><i class="bi bi-calendar2-check-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                        <div class="col-md-3 mi-columna"><i class="bi bi-book-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                    </div>
+                </div> 
+            </section>
+            <h2 id="banner3Cell" style="display: none;">¿Que estás esperando?<br>Inicia tu viaje ya.</h2>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="equipo">
+        <h3 id="quienesSomos"></h3>
+        <div class="container" style="width: 100%;">
+            <div class="row justify-content-evenly">
+              <div class="col-md-4 cardEquipo">
+                <div class="miembroEquipo">
+                    <img src="./assets/imgs/1-Team_Elvira.webp" alt="Imagen Equipo Elvira" class="imgEquipo">
+                    <div style="padding: 5px;">
+                        <h4 class="nombreEquipo"></h4>
+                        <p class="puestoEquipo"></p>
+                        <p class="tituloEquipo"></p>
+                        <p class="descEquipo"></p>
+                        <div class="infoEquipo">
+                            <i class="bi bi-chat-dots-fill iconoEquipo"></i>
+                            <p class="contactoEquipo"></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 cardEquipo">
+                <div class="miembroEquipo">
+                    <img src="./assets/imgs/5-Team_Kiki.webp" alt="Imagen Equipo Kiki" class="imgEquipo">
+                    <div style="padding: 5px;">
+                        <h4 class="nombreEquipo"></h4>
+                        <p class="puestoEquipo"></p>
+                        <p class="tituloEquipo"></p>
+                        <p class="descEquipo"></p>
+                        <div class="infoEquipo">
+                            <i class="bi bi-chat-dots-fill iconoEquipo"></i>
+                            <p class="contactoEquipo"></p>
+                        </div>
+                    </div>
+                </div>
+              </div> 
+              <div class="col-md-4 cardEquipo">
+                <div class="miembroEquipo">
+                    <img src="./assets/imgs/4-Team_Guido.webp" alt="Imagen Equipo Guido" class="imgEquipo">
+                    <div style="padding: 5px;">
+                        <h4 class="nombreEquipo"></h4>
+                        <p class="puestoEquipo"></p>
+                        <p class="tituloEquipo"></p>
+                        <p class="descEquipo"></p>
+                        <div class="infoEquipo">
+                            <i class="bi bi-chat-dots-fill iconoEquipo"></i>
+                            <p class="contactoEquipo"></p>
+                        </div>
+                    </div>
+                </div>
+              </div> 
+                <div class="col-md-4 cardEquipo">
+                    <div class="miembroEquipo">
+                        <img src="./assets/imgs/2-Team_Leslie.webp" alt="Imagen Equipo Lesli" class="imgEquipo">
+                        <div style="padding: 5px;">
+                            <h4 class="nombreEquipo"></h4>
+                            <p class="puestoEquipo"></p>
+                            <p class="tituloEquipo"></p>
+                            <p class="descEquipo"></p>
+                            <div class="infoEquipo">
+                                <i class="bi bi-chat-dots-fill iconoEquipo"></i>
+                                <p class="contactoEquipo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cardEquipo">
+                    <div class="miembroEquipo">
+                        <img src="./assets/imgs/3-Team_Fabian.webp" alt="Imagen Equipo Fabian" class="imgEquipo">
+                        <div style="padding: 5px;">
+                            <h4 class="nombreEquipo"></h4>
+                            <p class="puestoEquipo"></p>
+                            <p class="tituloEquipo"></p>
+                            <p class="descEquipo"></p>
+                            <div class="infoEquipo">
+                                <i class="bi bi-chat-dots-fill iconoEquipo"></i>
+                                <p class="contactoEquipo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section id="somosSierra">
+        <h4 id="porque"></h4>
+        <div class="container custom-container">
+            <div class="row">
+              <!-- Primer elemento -->
+              <div class="col-md-6" style="display: flex; justify-content: center; flex-direction: column;">
+                <h5 class="porqueTitle"></h5>
+                <p class="porqueText"></p>
+                <h5 class="porqueTitle"></h5>
+                <p class="porqueText"></p>
+              </div>
+              <!-- Segundo elemento -->
+              <div class="col-md-6">
+                <video id="video" width="50%" controls autoplay>
+                    <source src="./assets/imgs/SierraEC.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de videos.
+                  </video>
+              </div> 
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3 id="fraseFinal"></h3>
+    </section>
+    <footer>
+        <div id="footerSecction">
+            <div class="container" style="width: 90%; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-3 footerPart">
+                        <h4 class="tituloFooter"></h4>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 footerPart">
+                        <img src="./assets/imgs/logoSierraSinfondoAzul.png" alt="Logo Sierra" width="40%">
+                    </div>
+                    <div class="col-md-4 footerPart">
+                        <i class="bi bi-geo-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                    <div class="col-md-4 footerPart">
+                        <i class="bi bi-phone-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                        <i class="bi bi-phone-fill iconFooter"></i>
+                        <p class="textoSecFooter"></p>
+                    </div>
+                </div>
+            </div>
+            <p class="copyRight"><span style="color: #f25b6b;">&copy;</span><span class="copyRight"></span></p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./setLangNosotros.js" type="module"></script>
+</body>
+</html>

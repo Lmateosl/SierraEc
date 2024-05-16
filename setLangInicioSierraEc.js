@@ -55,6 +55,8 @@ var swiper = new Swiper('.mySwiper', {
     }
   });
 
+window.localStorage.setItem('source', 'ec');
+
 document.getElementById("changeEn").onclick = () => cambiarIdioma('en', true);
 document.getElementById("changeEs").onclick = () => cambiarIdioma('es', true);
 document.getElementById("changeGer").onclick = () => cambiarIdioma('ger', true);
