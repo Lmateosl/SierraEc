@@ -84,3 +84,7 @@ if (storeLang) {
 document.getElementById("irASierraEc").onclick = () => {
     window.location.href = "sierraEc-Home.html";
 }
+
+document.getElementById("irASierraPlus").onclick = () => {
+    window.location.href = "sierra-plus-home.html";
+}

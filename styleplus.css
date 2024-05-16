@@ -1,0 +1,910 @@
+@font-face {
+    font-family: 'Kepler'; /* Nombre que darás a tu fuente */
+    src: url('./assets/fonts/KeplerStd-BlackExtDisp.otf');
+}
+
+@font-face {
+    font-family: 'sierraEc'; /* Nombre que darás a tu fuente */
+    src: url('./assets/fonts/Rajdhani-Regular.ttf');
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); /* Empieza fuera de la pantalla, a la derecha */
+        opacity: 0; /* Empieza invisible */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        background: linear-gradient(to left, rgba(23,78,99,1), rgba(23,78,99,1));
+    }
+    to {
+        background: linear-gradient(90deg, rgba(23,78,99,1) 30%, rgba(23,78,99,0) 100%);
+    }
+}
+
+@keyframes fadeInCelular {
+    from { background-color: rgba(23,78,99,1); }
+    to { background-color: rgba(23,78,99,0.6); }
+}
+
+@keyframes fadeInSierra {
+    0% {
+        background-color: rgba(23,78,99,1); 
+    }
+    50% {
+        background-color: rgba(23,78,99,1); 
+    }
+    100% {
+        background-color: rgba(23,78,99,0.4); 
+    }
+}
+
+@keyframes fadeInImgs {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*Pagina Sierra Ec Inicio*/
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'sierraEc' !important;
+}
+
+/*header page*/
+header {
+    width: 100%;
+    margin: 0px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+    min-height: 500px; /* Altura del banner (ajustar según necesidades) */
+    background-color: #174e63;
+    background-image: url('./assets/imgs/tortugaGalapagos.jpg'); /* URL de la imagen de fondo */
+    background-size: cover;
+    background-position:center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Color amarillo con opacidad */
+    animation-name: fadeIn;
+    animation-duration: 2s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+#imgBanner2 {
+    background-image: url('./assets/imgs/cuyabenoSierraEc.jpg');
+    animation-name: none !important;
+}
+
+#imgBanner2::before {
+    background: linear-gradient(90deg, rgba(23,78,99,1) 30%, rgba(23,78,99,0) 100%);
+    animation-name: none !important;
+}
+
+#imgBanner3 {
+    background-image: url('./assets/imgs/costaSierra.jpg');
+    animation-name: none !important;
+
+}
+
+#imgBanner3::before {
+    background: linear-gradient(90deg, rgba(23,78,99,1) 30%, rgba(23,78,99,0) 100%);
+    animation-name: none !important;
+}
+
+#banner3Cell {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.banner-content {
+    position: relative; /* Para que los elementos se posicionen en relación al banner */
+    z-index: 1; /* Coloca el contenido encima de la capa de opacidad */
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+    padding: 50px; /* Espaciado interno del contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    box-shadow: 1px 1px 10px 1px rgba(148,148,148,1);
+    z-index: 5;
+}
+.transparent-bg {
+    background-color: #fff !important; /* Fondo transparente */
+}
+
+.logo-img {
+    width: 73px; /* Tamaño de la imagen en la parte izquierda */
+    height: auto;
+    margin: 0px 30px; /* Espaciado entre la imagen y el texto */
+}
+
+.navbar-nav .nav-link {
+    color: #343e47; /* Color de texto blanco */
+    margin: 10px 5px;
+    font-size: 18px;
+}
+
+.menuItem {
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.finalItem {
+    margin-right: 50px;
+}
+
+.nav-link:hover {
+    color: #ec6009 !important;
+}
+
+.navbar-nav .social-icons a.nav-link {
+    background-color: transparent; /* Fondo transparente para iconos */
+}
+
+.icon {
+    color: #ec6009 !important;
+    font-size: 20px;
+    margin-top: 5px !important;
+}
+
+.icon:hover {
+    color: #174e63 !important;
+}
+
+.navbar-nav .social-icons a.nav-link .bi {
+    font-size: 1.5rem; /* Tamaño de iconos */
+}
+
+.btn-custom {
+    background-color: transparent !important; /* Fondo transparente para botón */
+    border: 2px solid #fff !important;
+    color: #ec6009 !important; /* Color de texto blanco para botón */
+    margin: 10px 10px;
+    max-width: 170px !important;
+    font-size: 20px !important;
+}
+
+.btn-custom:hover {
+    border: 2px solid #ec6009 !important;
+    color: #fff !important;
+    background-color: #ec6009 !important;
+}
+
+/*Body Welcome amigo*/
+#welcomeSecction {
+    width: 50%;
+    margin: 130px auto 30px auto;
+}
+
+#welcomeText {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#welcome {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 12px rgba(52,62,70,1);
+}
+
+.reservaAhora {
+    background-color: #ec6009 !important; /* Fondo transparente para botón */
+    border: 2px solid #ec6009 !important;
+    color: #fff !important; /* Color de texto blanco para botón */
+    margin: 15px auto;
+    width: 160px;
+    border-radius: 5px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.reservaAhora:hover {
+    border: 2px solid #fff !important;
+    color: #ec6009 !important;
+    background-color: #fff !important;
+}
+
+#pasos {
+    width: 70%;
+    margin: 60px auto 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #174e63;
+    font-size: 20px;
+    background-color: #174e63;
+}
+
+.mi-container {
+    margin: 10px;
+}
+
+.mi-columna {
+    padding: 10px;
+    text-align: center;
+}
+
+#tresPasos {
+    font-family: 'sierraEc' !important;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.paso {
+    color: #fff;
+}
+
+.numbers {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ec6009;
+}
+
+.icono {
+    color: #ec6009;
+    font-size: 25px;
+}
+
+/*Seccion A donde ir*/
+#aDondeIr {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.imgCarusel {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(148,148,148,1);
+    width: 255px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Centrar imagen */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ec6009 !important;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+#adondeText {
+    text-align: center;
+    color: #174e63;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#destinosTop {
+    text-align: center;
+    color: #ec6009;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#btnReservaAhora {
+    min-width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #174e63;
+    border: 2px solid #174e63;
+    font-size: 20px;
+    margin: 30px auto;
+    display: block;
+    font-weight: bold;
+}
+
+#btnReservaAhora:hover {
+    background-color: #ec6009 !important;
+    border: 2px solid #ec6009 !important;
+    color: #fff !important;
+}
+
+/*Somo sierra section*/
+
+#somosSierra {
+    background-color: #174e63;
+    border-radius: 30% 30% 0px 0px;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#iconosViajeEc {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.custom-container {
+    width: 80%;
+    margin: 0 auto; /* Centrar el container horizontalmente */
+}
+
+.custom-item {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.somosIcon {
+    color: #ec6009;
+    font-size: 30px;
+    text-align: center;
+}
+
+#somosTextCont {
+    margin-top: 50px;
+}
+
+/*Nuestros destinos Cards*/
+.card-container {
+    perspective: 1000px;
+}
+  
+.cards {
+    width: 70%;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: 20px auto;
+}
+  
+.cards:hover {
+    transform: rotateY(180deg);
+}
+  
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px rgba(148,148,148,1);
+    padding: 5px 10px;
+}
+  
+.front {
+    background-size: cover;
+    background-position:center;
+    border: 4px solid #ec6009;
+}
+
+.front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    border-radius: 20px;
+    background-color: rgba(52,62,70,0.7)
+}
+
+.titleDestCar {
+    color: #fff;
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    font-family: 'sierraEc' !important;
+    font-weight: bold;
+}
+  
+.back {
+    background-color: #343e47;
+    color: #fff;
+    transform: rotateY(180deg);
+    border: 4px solid #ec6009;
+}
+
+#cardMejoresDestinos {
+    background-image: url('./assets/imgs/cuyabenoSierraEc.jpg'); /* URL de la imagen de fondo */
+}
+
+#cardEcuador {
+    background-image: url('./assets/imgs/sierraEcuador.jpg'); /* URL de la imagen de fondo */
+}
+
+#cardGalapagos {
+    background-image: url('./assets/imgs/iguanaGalapagos.jpg'); /* URL de la imagen de fondo */
+}
+
+#cardTurquia {
+    background-image: url('./assets/imgs/turquia-capadocia.jpg'); /* URL de la imagen de fondo */
+}
+
+.cardDestText {
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+
+.btnCards {
+    border: #ec6009 4px solid;
+    background-color: #ec6009;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    min-width: 130px;
+    border-radius: 10px;
+}
+
+.btnCards:hover {
+    border: #fff 4px solid;
+    background-color: #fff;
+    color: #ec6009;
+}
+
+/*Nuestros destinos*/
+#nuestrosDestinos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nuestrosDestinosText {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ec6009;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#subtituloNuestrosDestinos {
+    text-align: center;
+    font-size: 20px;
+    color: #ec6009;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#sanCristoContainer {
+    width: 95%;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#santaCruzContainer {
+    width: 95%;
+    padding: 0px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+#cuyabenoContainer {
+    width: 95%;
+    padding: 0px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.imgsDestinos {
+    width: 90%;
+    margin: 5px auto;
+    box-shadow: 2px 2px 10px 2px rgba(148,148,148,1);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 4px solid #ec6009;
+    animation-name: fadeInImgs;
+    animation-duration: 1.5s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+.sanText {
+    text-align: center; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonSanCristo {
+    min-width: 170px;
+    height: 40px;
+    color: #174e63;
+    border: 2px solid #174e63;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.botonSanCristo:hover {
+    background-color: #ec6009 !important;
+    border: 2px solid #ec6009 !important;
+    color: #fff !important;
+}
+
+/*Cuatro Mundos section*/
+#cuatroMundos {
+    background-color: #174e63;
+    border-radius: 10%;
+    width: 100%;
+    animation-duration: 1.5s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+#cuatroMundosContainer {
+    width: 80%;
+    margin: 50px auto 0px auto;
+}
+
+#textContainer4Mundos {
+    text-align: left;
+}
+
+#list4mundos {
+    color: #fff;
+    font-size: 20px !important;
+}
+
+.imgsMundos {
+    border-radius: 10px;
+    width: 100%;
+    height: 290px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation-name: fadeInImgs;
+    animation-duration: 1.5s; /* Duración de la animación */
+    animation-fill-mode: forwards;
+}
+
+#imagenes4Mundos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#btnExploralo {
+    min-width: 170px;
+    height: 40px;
+    background-color: #ec6009 !important;
+    border: 2px solid #ec6009 !important;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#btnExploralo:hover {
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    color: #ec6009 !important;
+}
+
+/*Testimonios section*/
+#testimonios {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    background-color: #fff;
+    border-radius: 20% 20% 0px 0px;
+}
+
+.textTestimonio {
+    color: #174e63;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cardTestimonio {
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px 2px rgba(148,148,148,1);
+    padding: 20px;
+}
+
+.cardTestimonio:hover {
+    box-shadow: 4px 4px 11px 4px rgba(148,148,148,1);
+}
+
+.imgsCard {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    margin: 0px;
+    background-color: #174e63;
+    padding: 30px 20px 10px 20px;
+    border-radius: 10% 10% 0px 0px;
+}
+
+.footerPart {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.tituloFooter {
+    color: #ec6009;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.textoSecFooter {
+    color: #fff;
+    font-size: 17px;
+}
+
+.iconFooter {
+    color: #ec6009;
+    font-size: 25px;
+}
+
+.copyRight {
+    text-align: center; 
+    font-size: 20px; 
+    color: #fff; 
+    margin: 0px;
+}
+
+@media (max-width: 1000px) {
+
+    /*Pagina Sierra Ec Inicio*/
+    /*Baneer*/
+    .banner-content {
+        padding: 15px;
+    }
+
+    .banner {
+        min-height: 500px;
+    }
+
+    .banner::before {
+        animation-name: fadeInCelular;
+    }
+
+    #imgBanner2::before {
+        background-color: rgba(23,78,99,0.7);
+    }
+
+    #imgBanner3::before {
+        background-color: rgba(23,78,99,0.7);
+    }
+
+    #bannerSierra {
+        min-height: 400px;
+    }
+
+    /*Nav Section*/
+    nav {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .nav-link {
+        margin: 0px !important;
+    }
+
+    .logo-img {
+        width: 70px;
+    }
+
+    #hambuergesa {
+        border: 2px solid #fff;
+    }
+
+    .finalItem {
+        margin-right: 0px;
+    }
+
+    /*Welcome Section*/
+    #banner3Cell {
+        display: block !important;
+    }
+
+    #pasos {
+        display: none;
+    }
+
+    #welcome {
+        font-size: 30px;
+        text-shadow: none;
+    }
+
+    #welcomeText {
+        font-size: 17px;
+    }
+
+    #welcomeSecction { 
+        width: 100%;
+    }
+
+    /*Destinos Top Section*/
+    #destinosTop {
+        font-size: 30px;
+    }
+
+    #somosSierra {
+        border-radius: 100px 100px 0px 0px;
+    }
+
+    #somosTextCont {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #nuestrosDestinos {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #santaCruzContainer {
+        width: 95%;
+        margin: 5px auto;
+        margin-top: 20px;
+    }
+
+    #sanCristoContainer {
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    #cuyabenoContainer {
+        width: 95%;
+        margin: 5px auto;
+        margin-top: 20px;
+    }
+
+    .sanText {
+        margin-top: 5px;
+    }
+
+    .imgsDestinos {
+        width: 100%;
+    }
+
+    /*Cuatro mundos section*/
+    #cuatroMundos {
+        border-radius: 70px;
+    }
+
+    #cuatroMundosContainer {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    #textContainer4Mundos {
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    #textContainer4Mundos h4 {
+        font-size: 30px;
+    }
+
+    #textContainer4Mundos p {
+        font-size: 20px;
+    }
+
+    #textContainer4Mundos ul {
+        font-size: 20px;
+    }
+
+    #imagenes4Mundos {
+        display: none;
+    }
+
+    #list4mundos {
+        text-align: left;
+    }
+
+    /*Testimonios section*/
+    #testimonios {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .cardTestimonio {
+        margin-bottom: 30px;
+        width: 90%;
+    } 
+
+    /*Footer Section*/
+    footer {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .footerPart {
+        text-align: center;
+    }
+}
