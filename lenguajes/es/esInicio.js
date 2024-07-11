@@ -6,7 +6,10 @@ const inicio = {
     botonReservaAhora: "Reserva Ahora",
     btnLang: "",
     "welcomeMessage": "¡Siente la alegría de la vida, comienza un nuevo viaje!",
-    "subtitloWelcomeMessage": "¡Descubre la maravilla de Ecuador! Sumérgete en un mundo de diversidad sin igual, donde cada rincón te sorprende con su encanto natural. Desde majestuosos volcanes hasta playas de ensueño, pasando por exuberantes selvas y una rica herencia cultural. Disfruta de nuestra gastronomía única y déjate cautivar por la magia que solo Ecuador puede ofrecer. ¿Estás listo para vivir una aventura inolvidable?",
+    destBanner: 'Descubre las Islas Galápagos',
+    "subtitloWelcomeMessage": "Sumérgete en el paraíso natural de las Islas Galápagos, donde podrás observar una biodiversidad única, explorar paisajes volcánicos impresionantes y disfrutar de la vida marina en su estado más puro.",
+    destBanner2: 'Descubre la Cueva de los Tayos',
+    destBanner2Text: 'Aventura en la misteriosa Cueva de los Tayos, un lugar lleno de leyendas y maravillas subterráneas. Explora pasajes profundos y descubre la fascinante geología y arqueología que este lugar único ofrece.',
     "botonViajamos": "¿VIAJAMOS?",
     "pasosMensaje": "¡Prepara tu aventura en tres simples pasos!",
     "pasos": [
@@ -19,7 +22,7 @@ const inicio = {
     btnReserva: "¡Reserva ahora!",
     "vuelaPorEcuador": ["Descubre a Ecuador en un viaje único", 
     "Vive una aventura inolvidable viajando a través de las cuatro regiones del país:\nGalápagos, Costa, Sierra y Amazonía."],
-    "paquetesIncluyen": ["¡Experiencia completa!, esto incluye nuestros paquetes:",
+    "paquetesIncluyen": ["¡Experiencia completa!, <br>esto incluye nuestros paquetes:",
     "Te ofrecemos aventuras únicas, con alimentación completa tipo menú, traslados a las excursiones y actividades, guía autorizado y mucho más."],
     "noEsperesMas": ["Somos SierraEC",
     "Ecuador es un país megadiverso, y a través de nuestros paquetes de turismo especializados podrás conocer cada rincón.",
@@ -27,10 +30,10 @@ const inicio = {
     "tripsGallery": ["TRIPS GALLERY",
         "Nuestros Destinos"],
     cardsDestinos: {
-        destinosTop: ["Destinos Top", "Explora nuestros destinos más destacados y descubre experiencias inolvidables en todo el mundo."],
-        ecuador: ["Ecuador", "Sumérgete en la belleza natural y la rica cultura de Ecuador, desde sus montañas hasta sus playas tropicales."],
+        destinosTop: ["Aventura", "Descubre la emoción y adrenalina en estos destinos llenos de aventura."],
+        ecuador: ["Relax", "Relájate y disfruta de la tranquilidad en estos destinos perfectos para descansar."],
         galapagos: ["Galápagos", "Descubre las islas Galápagos, un paraíso único lleno de vida silvestre extraordinaria y paisajes maravillosos."],
-        turquia: ["Turquía", "Embárcate en una aventura a través de Turquía, donde la historia antigua se mezcla con la modernidad en una tierra llena de maravillas."],
+        turquia: ["Turismo Cultural", "Explora la riqueza cultural e histórica en estos fascinantes destinos."],
         btn: "Ver Destinos"
     },
     "galerias": {
@@ -104,7 +107,25 @@ const inicio = {
     
         ],
         derechos: " 2024 Sierra Ec. Todos los derechos reservados."
-    }
+    },
+    teOfrecemos: "Te ofrecemos la oportunidad de explorar Ecuador con paquetes diseñados para brindar una experiencia inolvidable.",
+    programasSierra: "Incluido en todos nuestros programas de Sierra EC:",
+    programasSpec: [
+        `<strong>Transporte y guía de turismo: </strong>Nuestros paquetes incluyen transporte y guías
+        expertos para el desarrollo de las actividades, con el lugar de inicio de los tours
+        especificado en cada programa.`,
+        `<strong>Alojamiento con desayuno: </strong>En programas de una noche o más, el hotel y el
+        desayuno están siempre incluidos, garantizando comodidad y un buen comienzo
+        para tus días de aventura.`,
+        `<strong>Impuestos incluidos: </strong>Todos los impuestos están incluidos en nuestros precios,
+        asegurando transparencia y sin costos ocultos.`,
+        `<strong>Alimentación completa en Galápagos y Amazonía: </strong>Para paquetes en las Islas
+        Galápagos y la Amazonía (dentro de los lodges), ofrecemos alimentación completa
+        que incluye desayuno, almuerzo y cena, para que disfrutes de una experiencia sin
+        preocupaciones.`
+    ],
+    programasFinal: `En <strong>Sierra EC</strong>, combinamos la aventura, la cultura y la naturaleza con la accesibilidad.
+    ¡Únete a nosotros y vive una experiencia única!`
 }
 
 export default inicio;

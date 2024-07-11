@@ -74,7 +74,7 @@ header {
     margin-top: 50px;
     min-height: 500px; /* Altura del banner (ajustar según necesidades) */
     background-color: #174e63;
-    background-image: url('./assets/imgs/tortugaGalapagos.jpg'); /* URL de la imagen de fondo */
+    background-image: url('./assets/imgs/turquia-capadocia.jpg'); /* URL de la imagen de fondo */
     background-size: cover;
     background-position:center;
 }
@@ -244,6 +244,14 @@ nav {
     border: 2px solid #fff !important;
     color: #ec6009 !important;
     background-color: #fff !important;
+}
+
+.destBanner {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 28px;
 }
 
 #pasos {

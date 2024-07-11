@@ -62,7 +62,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Kepler' !important;
+    font-family: 'sierraEc' !important;
 }
 
 /*header page*/
@@ -78,7 +78,7 @@ header {
     margin-top: 50px;
     min-height: 500px; /* Altura del banner (ajustar según necesidades) */
     background-color: #343e47;
-    background-image: url('./assets/imgs/tortugaGalapagos.jpg'); /* URL de la imagen de fondo */
+    background-image: url('./assets/imgs/sierraEcPlaya.jpg'); /* URL de la imagen de fondo */
     background-size: cover;
     background-position:center;
 }
@@ -96,7 +96,7 @@ header {
 }
 
 #imgBanner2 {
-    background-image: url('./assets/imgs/cuyabenoSierraEc.jpg');
+    background-image: url('./assets/imgs/tortugaGalapagos.jpg');
     animation-name: none !important;
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 #imgBanner3 {
-    background-image: url('./assets/imgs/costaSierra.jpg');
+    background-image: url('./assets/imgs/cuyabeno.jpg');
     animation-name: none !important;
 
 }
@@ -216,9 +216,16 @@ nav {
 #welcomeText {
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 30px;
-    font-weight: bold;
+    padding: 15px;
+}
+
+#welcomeText2 {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 30px;
     padding: 15px;
 }
 
@@ -250,12 +257,20 @@ nav {
     background-color: #fff !important;
 }
 
+.destBanner {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
 #pasos {
     width: 70%;
-    margin: 60px auto 30px auto;
-    padding: 20px;
+    margin: 30px auto 100px auto;
+    padding: 30px 10px 20px 10px;
     border-radius: 20px;
-    border: 2px solid #fff;
+    border: 4px solid #f25b6b;
     color: #343e47;
     font-size: 20px;
     background-color: #343e47;
@@ -503,7 +518,7 @@ nav {
 }
 
 #cardTurquia {
-    background-image: url('./assets/imgs/turquia-capadocia.jpg'); /* URL de la imagen de fondo */
+    background-image: url('./assets/imgs/cuencaFoto.jpg'); /* URL de la imagen de fondo */
 }
 
 .cardDestText {
@@ -1230,9 +1245,6 @@ label {
     }
 
     /*Welcome Section*/
-    #banner3Cell {
-        display: block !important;
-    }
 
     #pasos {
         display: none;
@@ -1244,7 +1256,11 @@ label {
     }
 
     #welcomeText {
-        font-size: 17px;
+        font-size: 18px;
+    }
+
+    #welcomeText2 {
+        font-size: 18px;
     }
 
     #welcomeSecction { 

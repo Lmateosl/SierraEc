@@ -99,26 +99,29 @@
             <div class="container banner-content" style="width: 100%;">
                 <div class="row">
                   <!-- Primer elemento -->
-                  <div class="col-md-12">
+                  <div class="col-md-6">
+                    <h2 class="destBanner">Viajes, SierraEc, Aventura, Galapagos, Ecuador, CUeva de los tallos, Trip, Adventure, Turquia, Turkish, Cheap</h2>
                     <p id="welcomeText"></p>
                     <button type="button" class="reservaAhora"></button>
+                  </div>
+                  <div class="col-md-6 sanText">
                   </div>
                 </div>
             </div>
           </div>
           <div class="carousel-item banner" id="imgBanner3" data-bs-interval="6000">
-            <section id="pasos" style="z-index: 1; position: relative;">
-                <h2 id="tresPasos"></h2>
-                <div class="container-fluid mi-container">
-                    <div class="row">
-                        <div class="col-md-3 mi-columna"><i class="bi bi-1-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
-                        <div class="col-md-4 mi-columna"><i class="bi bi-2-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
-                        <div class="col-md-3 mi-columna"><i class="bi bi-3-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
-                    </div>
-                </div> 
-            </section>
+            <div class="container banner-content" style="width: 100%;">
+                <div class="row">
+                  <!-- Primer elemento -->
+                  <div class="col-md-6">
+                    <h2 class="destBanner">Viajes, SierraEc, Aventura, Galapagos, Ecuador, CUeva de los tallos, Trip, Adventure, Turquia, Turkish, Cheap</h2>
+                    <p id="welcomeText2"></p>
+                    <button type="button" class="reservaAhora"></button>
+                  </div>
+                  <div class="col-md-6 sanText">
+                  </div>
+                </div>
+            </div>
             <h2 id="banner3Cell" style="display: none;">¿Que estás esperando?<br>Inicia tu viaje ya.</h2>
           </div>
         </div>
@@ -152,9 +155,10 @@
     </section>
     <section id="somosSierra">
         <div class="container custom-container" id="iconosViajeEc">
+            
             <div class="row">
               <!-- Primer elemento -->
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <!-- Sub-grid dentro del primer elemento -->
                 <div class="row">
                   <div class="col-md-12 custom-item" style="display: flex; justify-content: center; align-items: center;"><i class="bi bi-pin-map-fill somosIcon"></i></div>
@@ -162,7 +166,7 @@
                 </div>
               </div>
               <!-- Segundo elemento -->
-              <div class="col-md-6">
+              <div class="col-md-6" hidden>
                 <!-- Sub-grid dentro del segundo elemento -->
                 <div class="row">
                   <div class="col-md-12 custom-item" style="display: flex; justify-content: center; align-items: center;"><i class="bi bi-backpack2-fill somosIcon"></i></div>
@@ -192,6 +196,39 @@
                 </div>
               </div> 
             </div>
+            <p style="font-size: 22px; text-align: center; margin-top: 30px;" id="teOfrecemos">
+                Te ofrecemos la oportunidad de explorar Ecuador con paquetes diseñados para brindar una
+                experiencia inolvidable.
+            </p>
+            <p style="font-size: 22px; text-align: center; margin-top: 20px; font-weight: bold;" id="programasSierra">
+                Incluido en todos nuestros programas de Sierra EC:
+            </p>
+            <ul>
+                <li style="font-size: 20px; text-align: left; margin: 30px;" class="programasSpec">
+                    <strong>Transporte y guía de turismo: </strong>Nuestros paquetes incluyen transporte y guías
+                    expertos para el desarrollo de las actividades, con el lugar de inicio de los tours
+                    especificado en cada programa.
+                </li>
+                <li style="font-size: 20px; text-align: left; margin: 20px;" class="programasSpec">
+                    <strong>Alojamiento con desayuno: </strong>En programas de una noche o más, el hotel y el
+                    desayuno están siempre incluidos, garantizando comodidad y un buen comienzo
+                    para tus días de aventura.
+                </li>
+                <li style="font-size: 20px; text-align: left; margin: 20px;" class="programasSpec">
+                    <strong>Impuestos incluidos: </strong>Todos los impuestos están incluidos en nuestros precios,
+                    asegurando transparencia y sin costos ocultos.
+                </li>
+                <li style="font-size: 20px; text-align: left; margin: 20px;" class="programasSpec">
+                    <strong>Alimentación completa en Galápagos y Amazonía: </strong>Para paquetes en las Islas
+                    Galápagos y la Amazonía (dentro de los lodges), ofrecemos alimentación completa
+                    que incluye desayuno, almuerzo y cena, para que disfrutes de una experiencia sin
+                    preocupaciones.
+                </li>
+            </ul>
+            <p style="font-size: 22px; text-align: center; margin-top: 30px;" id="programasFinal">
+                En <strong>Sierra EC</strong>, combinamos la aventura, la cultura y la naturaleza con la accesibilidad.
+                ¡Únete a nosotros y vive una experiencia única!
+            </p>
         </div>
     </section>
     <section id="nuestrosDestinos">
@@ -213,6 +250,19 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="card-container" id="ecuadorCardContainer" >
+                        <div class="cards">
+                            <div class="front" id="cardEcuador" >
+                            <h4 class="titleDestCar"></h4>
+                            </div>
+                            <div class="back">
+                            <p class="cardDestText"></p>
+                            <button type="button" class="btnCards" id="cardEcuadorBtn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div class="card-container" id="galapagosCardContainer">
                         <div class="cards">
                             <div class="front" id="cardGalapagos">
@@ -220,20 +270,7 @@
                             </div>
                             <div class="back">
                             <p class="cardDestText"></p>
-                            <button type="button" class="btnCards" id="cardGalapagosBtn"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card-container" id="ecuadorCardContainer">
-                        <div class="cards">
-                            <div class="front" id="cardEcuador">
-                            <h4 class="titleDestCar"></h4>
-                            </div>
-                            <div class="back">
-                            <p class="cardDestText"></p>
-                            <button type="button" class="btnCards" id="cardEcuadorBtn"></button>
+                            <button type="button" class="btnCards" id="cardGalapagosBtn" ></button>
                             </div>
                         </div>
                     </div>
@@ -377,10 +414,22 @@
             </div>
         </div>
     </section>
+    <section id="pasos" style="z-index: 1; position: relative;">
+        <h2 id="tresPasos"></h2>
+        <div class="container-fluid mi-container">
+            <div class="row">
+                <div class="col-md-3 mi-columna"><i class="bi bi-1-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
+                <div class="col-md-4 mi-columna"><i class="bi bi-2-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+                <div class="col-md-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right-circle icono"></i></div>
+                <div class="col-md-3 mi-columna"><i class="bi bi-3-circle-fill numbers"></i> <p class="paso">Columna 1</p></div>
+            </div>
+        </div> 
+    </section>
     <footer>
         <div id="footerSecction">
             <div class="container" style="width: 90%; margin: 0 auto;">
-                <div class="row">
+                <div class="row" hidden>
                     <div class="col-md-3 footerPart">
                         <h4 class="tituloFooter"></h4>
                         <p class="textoSecFooter"></p>

@@ -6,8 +6,11 @@ const inicio = {
     botonReservaAhora: "Jetzt buchen",
     btnLang: "",
     "welcomeMessage": "Fühle die Freude am Leben, starte eine neue Reise!",
-    "subtitloWelcomeMessage": "Entdecke das Wunder von Ecuador! Tauche ein in eine Welt der unvergleichlichen Vielfalt, in der jede Ecke mit ihrem natürlichen Charme überrascht. Von majestätischen Vulkanen bis hin zu traumhaften Stränden, über üppige Dschungel und reiches kulturelles Erbe. Genieße unsere einzigartige Gastronomie und lass dich von der Magie verzaubern, die nur Ecuador bieten kann. Bist du bereit für ein unvergessliches Abenteuer?",
+    destBanner: 'Entdecken Sie die Galapagos-Inseln',
+    "subtitloWelcomeMessage": "Tauchen Sie ein in das Naturparadies der Galapagos-Inseln, wo Sie eine einzigartige Biodiversität beobachten, beeindruckende vulkanische Landschaften erkunden und das marine Leben in seiner reinsten Form genießen können.",
     "botonViajamos": "REISEN WIR?",
+    destBanner2: 'Discover the Cave of the Tayos',
+    destBanner2Text: 'Embark on an adventure in the mysterious Cave of the Tayos, a place filled with legends and underground wonders. Explore deep passages and discover the fascinating geology and archaeology that this unique location offers.',
     "pasosMensaje": "Bereite dein Abenteuer in drei einfachen Schritten vor!",
     "pasos": [
         "Wähle die Ziele aus, die du auf deiner Reise durch Ecuador erkunden möchtest.",
@@ -27,10 +30,10 @@ const inicio = {
     "tripsGallery": ["REISEGALERIE",
         "Unsere Ziele"],
     cardsDestinos: {
-        destinosTop: ["Top-Ziele", "Entdecke unsere Top-Ziele und erlebe unvergessliche Erlebnisse weltweit."],
-        ecuador: ["Ecuador", "Tauche ein in die natürliche Schönheit und reiche Kultur Ecuadors, von seinen Bergen bis zu seinen tropischen Stränden."],
+        destinosTop: ["Abenteuer", "Entdecken Sie Spannung und Adrenalin an diesen abenteuerreichen Zielen."],
+        ecuador: ["Entspannung", "Entspannen Sie sich und genießen Sie die Ruhe an diesen perfekten Orten zum Ausruhen."],
         galapagos: ["Galápagos", "Entdecke die Galápagos-Inseln, ein einzigartiges Paradies voller außergewöhnlicher Tierwelt und wunderschöner Landschaften."],
-        turquia: ["Türkei", "Begib dich auf ein Abenteuer durch die Türkei, wo sich alte Geschichte mit Modernität in einem Land voller Wunder vermischt."],
+        turquia: ["Kultureller Tourismus", "Erkunden Sie den kulturellen und historischen Reichtum dieser faszinierenden Ziele."],
         btn: "Ziele anzeigen"
     },
     "galerias": {
@@ -104,7 +107,16 @@ const inicio = {
     
         ],
         derechos: " 2024 Sierra Ec. Alle Rechte vorbehalten."
-    }
+    },
+    teOfrecemos: "Wir bieten Ihnen die Möglichkeit, Ecuador mit Paketen zu erkunden, die darauf ausgelegt sind, ein unvergessliches Erlebnis zu bieten.",
+    programasSierra: "In allen unseren Sierra EC-Programmen enthalten:",
+    programasSpec: [
+        "<strong>Transport und Reiseführer: </strong>Unsere Pakete beinhalten den Transport und fachkundige Reiseführer für die Aktivitäten, wobei der Startpunkt der Touren in jedem Programm angegeben ist.",
+        "<strong>Unterkunft mit Frühstück: </strong>In Programmen von einer Nacht oder mehr sind das Hotel und das Frühstück immer inbegriffen, um Komfort und einen guten Start in Ihre Abenteuertage zu gewährleisten.",
+        "<strong>Steuern inklusive: </strong>Alle Steuern sind in unseren Preisen enthalten, um Transparenz und keine versteckten Kosten zu gewährleisten.",
+        "<strong>Vollverpflegung auf den Galapagos-Inseln und im Amazonasgebiet: </strong>Für Pakete auf den Galapagos-Inseln und im Amazonasgebiet (innerhalb der Lodges) bieten wir Vollverpflegung, einschließlich Frühstück, Mittag- und Abendessen, damit Sie ein sorgenfreies Erlebnis genießen können."
+    ],
+    programasFinal: "Bei <strong>Sierra EC</strong> kombinieren wir Abenteuer, Kultur und Natur mit Zugänglichkeit. Schließen Sie sich uns an und erleben Sie ein einzigartiges Abenteuer!"
 }
 
 export default inicio;

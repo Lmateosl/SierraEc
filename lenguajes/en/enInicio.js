@@ -6,8 +6,11 @@ const inicio = {
     botonReservaAhora: "Book Now",
     btnLang: "",
     "welcomeMessage": "Feel the joy of life, start a new journey!",
-    "subtitloWelcomeMessage": "Discover the wonder of Ecuador! Immerse yourself in a world of unparalleled diversity, where every corner surprises you with its natural charm. From majestic volcanoes to dreamy beaches, through lush jungles and a rich cultural heritage. Enjoy our unique gastronomy and let yourself be captivated by the magic that only Ecuador can offer. Are you ready for an unforgettable adventure?",
+    destBanner: 'Discover the Galapagos Islands',
+    "subtitloWelcomeMessage": "Dive into the natural paradise of the Galapagos Islands, where you can observe unique biodiversity, explore stunning volcanic landscapes, and enjoy marine life in its purest form.",
     "botonViajamos": "TRAVEL NOW!",
+    destBanner2: 'Discover the Cave of the Tayos',
+    destBanner2Text: 'Embark on an adventure in the mysterious Cave of the Tayos, a place filled with legends and underground wonders. Explore deep passages and discover the fascinating geology and archaeology that this unique location offers.',
     "pasosMensaje": "Prepare your adventure in three simple steps!",
     "pasos": [
         "Select the destinations you want to explore on your trip through Ecuador.",
@@ -27,10 +30,10 @@ const inicio = {
     "tripsGallery": ["TRIPS GALLERY",
         "Our Destinations"],
     cardsDestinos: {
-        destinosTop: ["Top Destinations", "Explore our top destinations and discover unforgettable experiences worldwide."],
-        ecuador: ["Ecuador", "Immerse yourself in the natural beauty and rich culture of Ecuador, from its mountains to its tropical beaches."],
+        destinosTop: ["Adventure", "Discover excitement and adrenaline in these adventure-packed destinations."],
+        ecuador: ["Relax", "Relax and enjoy tranquility in these perfect destinations for rest."],
         galapagos: ["Galapagos", "Discover the Galapagos Islands, a unique paradise full of extraordinary wildlife and wonderful landscapes."],
-        turquia: ["Turkey", "Embark on an adventure through Turkey, where ancient history blends with modernity in a land full of wonders."],
+        turquia: ["Cultural Tourism", "Explore the cultural and historical richness in these fascinating destinations."],
         btn: "See Destinations"
     },
     "galerias": {
@@ -104,7 +107,16 @@ const inicio = {
     
         ],
         derechos: "2024 Sierra Ec. All rights reserved."
-    }
+    },
+    teOfrecemos: "We offer you the opportunity to explore Ecuador with packages designed to provide an unforgettable experience.",
+    programasSierra: "Included in all our Sierra EC programs:",
+    programasSpec: [
+        "<strong>Transportation and tour guide: </strong>Our packages include transportation and expert guides for the activities, with the starting point of the tours specified in each program.",
+        "<strong>Accommodation with breakfast: </strong>In programs of one night or more, the hotel and breakfast are always included, ensuring comfort and a good start to your adventure days.",
+        "<strong>Taxes included: </strong>All taxes are included in our prices, ensuring transparency and no hidden costs.",
+        "<strong>Full board in Galapagos and Amazonia: </strong>For packages in the Galapagos Islands and the Amazon (within the lodges), we offer full board including breakfast, lunch, and dinner, so you can enjoy a worry-free experience."
+    ],
+    programasFinal: "At <strong>Sierra EC</strong>, we combine adventure, culture, and nature with accessibility. Join us and experience a unique adventure!"
 }
 
 export default inicio;

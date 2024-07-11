@@ -4,7 +4,7 @@ const SierraFull = {
         titulo: "Beginnen Sie Ihre Traumreise!",
         subtitulo: 'Entdecken Sie den idealen Plan für Ihr nächstes Abenteuer',
         descubre: {
-            sierraEc: ['Hier finden Sie Programme für alle, die hochwertige Erlebnisse zu erschwinglichen Preisen suchen.', 'Entdecken Sie Sierra Ec!'],
+            sierraEc: ['Entdecken Sie die Schönheit Ecuadors und erkunden Sie sorgfältig gestaltete Programme für diejenigen, die Authentizität und Qualität zu erschwinglichen Preisen schätzen.', 'Entdecken Sie Sierra Ec!'],
             sierraPlus: ['Die ideale Option für diejenigen, die außergewöhnliche Erlebnisse mit erstklassigen Dienstleistungen erleben möchten.', 'Entdecken Sie Sierra Plus!'],
         }
     }

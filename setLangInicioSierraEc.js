@@ -19,6 +19,8 @@ const textoSecFooter = document.getElementsByClassName('textoSecFooter');
 const titleDestCar = document.getElementsByClassName("titleDestCar");
 const cardDestText = document.getElementsByClassName("cardDestText");
 const btnCards = document.getElementsByClassName("btnCards");
+const destBanner = document.getElementsByClassName("destBanner");
+const programasSpec = document.getElementsByClassName("programasSpec");
 
 const navbarCollapse = document.getElementById('navbarNav');
 
@@ -135,8 +137,12 @@ const idiomaText = (inicio) => {
     elements[3].innerHTML = inicio.contactanos;
     document.getElementById('welcome').innerText = inicio.welcomeMessage;
     reservaAhora[0].innerHTML = inicio.botonViajamos;
+    destBanner[0].innerHTML = inicio.destBanner;
     document.getElementById('welcomeText').innerText = inicio.subtitloWelcomeMessage;
     reservaAhora[1].innerHTML = inicio.botonViajamos;
+    destBanner[1].innerHTML = inicio.destBanner2;
+    document.getElementById('welcomeText2').innerText = inicio.destBanner2Text;
+    reservaAhora[2].innerHTML = inicio.botonViajamos;
     document.getElementById("tresPasos").innerText = inicio.pasosMensaje;
     pasos[0].innerHTML = inicio.pasos[0];
     pasos[1].innerHTML = inicio.pasos[1];
@@ -200,6 +206,13 @@ const idiomaText = (inicio) => {
     btnCards[1].innerHTML = inicio.cardsDestinos.btn;
     btnCards[2].innerHTML = inicio.cardsDestinos.btn;
     btnCards[3].innerHTML = inicio.cardsDestinos.btn;
+    document.getElementById('teOfrecemos').innerText = inicio.teOfrecemos;
+    document.getElementById('programasSierra').innerText = inicio.programasSierra;
+    programasSpec[0].innerHTML = inicio.programasSpec[0];
+    programasSpec[1].innerHTML = inicio.programasSpec[1];
+    programasSpec[2].innerHTML = inicio.programasSpec[2];
+    programasSpec[3].innerHTML = inicio.programasSpec[3];
+    document.getElementById('programasFinal').innerHTML = inicio.programasFinal;
 }
 
 const storeLang = window.localStorage.getItem('lang');
