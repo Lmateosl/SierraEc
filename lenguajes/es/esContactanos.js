@@ -6,7 +6,7 @@ const contactanos = {
     botonReservaAhora: "Reserva Ahora",
     btnLang: "",
     title: "Contáctanos",
-    subTitle: "<strong>¡Nos encantaría saber de ti!</strong> Si tienes preguntas, sugerencias o simplemente quieres decir hola, no dudes en contactarnos. Estamos aquí para ayudarte y convertir el viaje de tus sueños en realidad.",
+    subTitle: "<strong>¿Listo para comenzar tu aventura?</strong>  Contáctanos hoy mismo y descubre cómo podemos ayudarte a planificar el viaje de tus sueños. Estamos aquí para hacer realidad tus deseos de exploración y descubrimiento en Ecuador.",
     partes: {
         titulos: [
             "Dirección",
