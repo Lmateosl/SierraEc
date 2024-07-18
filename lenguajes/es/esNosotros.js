@@ -31,7 +31,7 @@ const nosotros = {
                 puesto: 'Gerente General',
                 titulo: 'Ingeniera en Turismo con maestría en Dirección y Gestión de Proyectos Turísticos.',
                 descripcion: '10 años de experiencia en agencias de viajes y operación turística.',
-                contacto: '<strong>Idiomas:</strong> Español - Inglés y Turco.<br>098 384 4799<br>info@sierraec.com'
+                contacto: '<strong>Idiomas:</strong> Español - Inglés y Turco.<br>098 768 2019<br>info@sierraec.com'
             },
             {
                 nombre: 'Kiki Farfán',
@@ -113,7 +113,7 @@ const nosotros = {
             },
             {
                 "titulo": "Reservas 1",
-                "texto": "098 384 4799"
+                "texto": "098 768 2019"
             },
             {
                 "titulo": "Reservas 2",

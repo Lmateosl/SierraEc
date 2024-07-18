@@ -18,7 +18,7 @@ const contactanos = {
             "Agustín Agualongo and Francisco Tamariz.<br>Cuenca - Ecuador.",
             "Monday to Friday: 9am - 6pm<br>Saturdays: 9am - 12pm",
             "info@sierraec.com",
-            "098 384 4799<br>098 793 8964"
+            "098 768 2019<br>098 793 8964"
         ]
     },
     escribenos: {
@@ -61,7 +61,7 @@ const contactanos = {
             },
             {
                 titulo: "Reservations 1",
-                texto: "098 384 4799"
+                texto: "098 768 2019"
             },
             {
                 titulo: "Reservations 2",

@@ -96,7 +96,7 @@ header {
 }
 
 #imgBanner2 {
-    background-image: url('./assets/imgs/iguanaGalapagos.jpg');
+    background-image: url('./assets/imgs/cuencaFoto.jpg');
     animation-name: none !important;
     background-position:center;
 }
@@ -107,8 +107,9 @@ header {
 }
 
 #imgBanner3 {
-    background-image: url('./assets/imgs/cuyabeno.jpg');
+    background-image: url('./assets/imgs/cruceroGalapagos.jpg');
     animation-name: none !important;
+    background-position:top;
 
 }
 

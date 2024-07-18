@@ -31,7 +31,7 @@ const nosotros = {
                 puesto: 'Geschäftsführerin',
                 titulo: 'Tourismus-Ingenieurin mit einem Master-Abschluss in Tourismusprojektmanagement.',
                 descripcion: '10 Jahre Erfahrung in Reisebüros und touristischer Betreuung.',
-                contacto: '<strong>Sprachen:</strong> Spanisch - Englisch und Türkisch.<br>098 384 4799<br>info@sierraec.com'
+                contacto: '<strong>Sprachen:</strong> Spanisch - Englisch und Türkisch.<br>098 768 2019<br>info@sierraec.com'
             },
             {
                 nombre: 'Kiki Farfán',
@@ -113,7 +113,7 @@ const nosotros = {
             },
             {
                 "titulo": "Reservierungen 1",
-                "texto": "098 384 4799"
+                "texto": "098 768 2019"
             },
             {
                 "titulo": "Reservierungen 2",

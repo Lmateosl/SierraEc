@@ -6,10 +6,10 @@ const inicio = {
     "botonReservaAhora": "Jetzt buchen",
     "btnLang": "",
     "welcomeMessage": "Fühle die Freude am Leben, beginne eine neue Reise!",
-    "destBanner": "Entdecken Sie die Galapagos-Inseln",
-    "subtitloWelcomeMessage": "Tauchen Sie ein in das natürliche Paradies der Galapagos-Inseln, wo Sie eine einzigartige Biodiversität beobachten, beeindruckende Vulkanlandschaften erkunden und das Meeresleben in seiner reinsten Form genießen können.",
-    "destBanner2": "Entdecken Sie die Cueva de los Tayos",
-    "destBanner2Text": "Abenteuer in der geheimnisvollen Cueva de los Tayos, einem Ort voller Legenden und unterirdischer Wunder. Erkunden Sie tiefe Passagen und entdecken Sie die faszinierende Geologie und Archäologie, die dieser einzigartige Ort bietet.",
+    "destBanner": "Rundreise durch Ecuador",
+    "subtitloWelcomeMessage": "Erkunden Sie die Schönheit und Vielfalt Ecuadors auf einer Reise durch seine Regionen. Entdecken Sie den kulturellen und natürlichen Reichtum dieses bezaubernden Landes, von den Anden bis zu den Galápagos-Inseln.",
+    "destBanner2": "Kreuzfahrt zu den Galápagos-Inseln",
+    "destBanner2Text": "Begeben Sie sich auf eine Kreuzfahrt zu den Galápagos-Inseln und entdecken Sie deren erstaunliche Artenvielfalt. Erkunden Sie dieses Naturparadies und erleben Sie ein unvergessliches Abenteuer.",
     "botonViajamos": "REISEN WIR?",
     "pasosMensaje": "Bereiten Sie Ihr Abenteuer in drei einfachen Schritten vor!",
     "pasos": [
@@ -119,7 +119,7 @@ const inicio = {
             },
             {
                 "titulo": "Reservierungen 1",
-                "texto": "098 384 4799"
+                "texto": "098 768 2019"
             },
             {
                 "titulo": "Reservierungen 2",

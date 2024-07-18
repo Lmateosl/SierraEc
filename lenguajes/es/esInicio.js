@@ -98,7 +98,7 @@ const inicio = {
             },
             {
                 "titulo": "Reservas 1",
-                "texto": "098 384 4799"
+                "texto": "098 768 2019"
             },
             {
                 "titulo": "Reservas 2",

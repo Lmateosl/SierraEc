@@ -31,7 +31,7 @@ const nosotros = {
                 puesto: 'General Manager',
                 titulo: 'Tourism Engineer with a Master’s degree in Tourism Project Management.',
                 descripcion: '10 years of experience in travel agencies and tour operations.',
-                contacto: '<strong>Languages:</strong> Spanish - English and Turkish.<br>098 384 4799<br>info@sierraec.com'
+                contacto: '<strong>Languages:</strong> Spanish - English and Turkish.<br>098 768 2019<br>info@sierraec.com'
             },
             {
                 nombre: 'Kiki Farfán',
@@ -113,7 +113,7 @@ const nosotros = {
             },
             {
                 "titulo": "Reservations 1",
-                "texto": "098 384 4799"
+                "texto": "098 768 2019"
             },
             {
                 "titulo": "Reservations 2",
