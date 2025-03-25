@@ -26,6 +26,8 @@ const navbarCollapse = document.getElementById('navbarNav');
 
 let currentLang;
 
+const env = 'https://appsierraec.netlify.app/?section=sierraEc';
+
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
@@ -90,6 +92,13 @@ document.getElementById("cardTurquia").onclick = ({currentTarget}) => {
 document.getElementById("cardTurquia").onmouseout = ({currentTarget}) => {
     currentTarget.children[0].removeAttribute('hidden');
 }
+for (let i = 0; i < reservaAhora.length; i ++) {
+    reservaAhora[i].onclick = (() =>  window.location.href = env);
+}
+
+for (let i = 0; i < btnCards.length; i ++) {
+    btnCards[i].onclick = (() =>  window.location.href = env);
+}
 
 function cambiarIdioma(idioma, isReload) {
     var dropdownBtn = document.getElementById('dropdownMenuButton');
@@ -150,6 +159,7 @@ const idiomaText = (inicio) => {
     document.getElementById('adondeText').innerText = inicio.aDondeIr;
     document.getElementById('destinosTop').innerText = inicio.destinosTop;
     document.getElementById('btnReservaAhora').innerText = inicio.btnReserva;
+    document.getElementById('btnReservaAhora').onclick = (() =>  window.location.href = env);
     mapa[0].innerHTML = inicio.vuelaPorEcuador[0];
     mapa[1].innerHTML = inicio.vuelaPorEcuador[1];
     mochilla[0].innerHTML = inicio.paquetesIncluyen[0];
@@ -178,6 +188,7 @@ const idiomaText = (inicio) => {
         document.getElementById('list4mundos').appendChild(li);
     });
     document.getElementById('btnExploralo').innerText = inicio.botonExploro;
+    document.getElementById('btnExploralo').onclick = (() =>  window.location.href = env);
     testimoniosTitulos[0].innerHTML = inicio.testimoniosTitulo[0];
     testimoniosTitulos[1].innerHTML = inicio.testimoniosTitulo[1];
     textTestimonios[0].innerHTML = inicio.testimonios[0];
