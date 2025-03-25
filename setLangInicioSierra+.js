@@ -26,7 +26,7 @@ const navbarCollapse = document.getElementById('navbarNav');
 
 let currentLang;
 
-const env = 'https://appsierraec.netlify.app/?section=sierraEc';
+const env = 'https://appsierraec.netlify.app/?section=sierraPlus';
 
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 'auto',
