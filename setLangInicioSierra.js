@@ -2,7 +2,7 @@ import sierraEs from './lenguajes/es/esSierra.js'
 import sierraEn from './lenguajes/en/enSierra.js';
 import sierraGer from './lenguajes/ger/gerSierra.js';
 
-const elements = document.getElementsByClassName('nav-link');
+// const elements = document.getElementsByClassName('nav-link');
 const textTipoSierra = document.getElementsByClassName('textTipoSierra');
 const btnSierraTipo = document.getElementsByClassName('btnSierraTipo');
 
@@ -54,8 +54,8 @@ function cambiarIdioma(idioma, isReload) {
 }
 
 const idiomaText = (sierra) => {
-    elements[0].innerHTML = sierra.nav[0];
-    elements[1].innerHTML = sierra.nav[1];
+    // elements[0].innerHTML = sierra.nav[0];
+    // elements[1].innerHTML = sierra.nav[1];
     document.getElementById('welcomeTextSierra').innerText = sierra.body.subtitulo;
     textTipoSierra[0].innerHTML = sierra.body.descubre.sierraEc[0];
     textTipoSierra[1].innerHTML = sierra.body.descubre.sierraPlus[0];

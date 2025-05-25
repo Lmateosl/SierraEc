@@ -122,7 +122,8 @@ const nosotros = {
     
         ],
         derechos: " 2024 Sierra Ec. Todos los derechos reservados."
-    }
+    },
+    wa: 'Chat en WhatsApp'
 }
 
 export default nosotros;

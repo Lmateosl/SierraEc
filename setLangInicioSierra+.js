@@ -96,8 +96,9 @@ for (let i = 0; i < reservaAhora.length; i ++) {
     reservaAhora[i].onclick = (() =>  window.location.href = env);
 }
 
+const categories = ['Cruise Trips', 'Thrill Expeditions', 'Galapagos Islands', 'Luxury City Escapes'];
 for (let i = 0; i < btnCards.length; i ++) {
-    btnCards[i].onclick = (() =>  window.location.href = env);
+    btnCards[i].onclick = (() =>  window.location.href = env + '&cat=' + categories[i]);
 }
 
 function cambiarIdioma(idioma, isReload) {

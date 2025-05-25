@@ -16,8 +16,19 @@ const porqueTitle = document.getElementsByClassName('porqueTitle');
 const porqueText = document.getElementsByClassName('porqueText');
 const tituloFooter = document.getElementsByClassName('tituloFooter');
 const textoSecFooter = document.getElementsByClassName('textoSecFooter');
+const cardMembros = document.getElementsByClassName('cardEquipo');
 
 const navbarCollapse = document.getElementById('navbarNav');
+
+const numbers = ['593987682019', '593987938964', '593963616397', '593987682019'];
+for (let i = 0; i < cardMembros.length; i++) {
+    cardMembros[i].onclick = () => {
+        const number = numbers[i];
+        const message = 'Hola, estoy interesado en el servicio de Sierra Ecuador.';
+        const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+}
 
 let currentLang;
 
@@ -116,7 +127,7 @@ const idiomaText = (sierra) => {
     porqueTitle[1].innerHTML = sierra.porque.subTitle[1];
     porqueText[0].innerHTML = sierra.porque.desc[0];
     porqueText[1].innerHTML = sierra.porque.desc[1];
-    document.getElementById('fraseFinal').innerText = sierra.final;
+    //document.getElementById('fraseFinal').innerText = sierra.final;
     tituloFooter[0].innerHTML = sierra.footer.secciones[0].titulo;
     tituloFooter[1].innerHTML = sierra.footer.secciones[1].titulo;
     tituloFooter[2].innerHTML = sierra.footer.secciones[2].titulo;

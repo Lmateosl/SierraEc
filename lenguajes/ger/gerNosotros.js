@@ -122,7 +122,8 @@ const nosotros = {
     
         ],
         derechos: " 2024 Sierra Ec. Alle Rechte vorbehalten."
-    }
+    },
+    wa: 'Chat auf WhatsApp'
 }
 
 export default nosotros;

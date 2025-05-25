@@ -794,21 +794,20 @@ footer {
     width: 70%;
     margin: 0 auto;
     display: flex;
-    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 #welcomeTextSierra {
     text-align: center;
-    color: #fff;
+    color: #f25b6b;
     font-size: 35px;
     font-weight: 500;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 8px rgba(52,62,70,1);
+    margin-bottom: 40px;
     font-weight: bold;
-    margin-top: 150px;
 }
 
 #welcomeSierra {
@@ -829,12 +828,12 @@ footer {
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #343e47;
-    border: 4px solid #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 19px 1px rgba(150,150,150,1);
 }
 
 .textTipoSierra {
@@ -963,6 +962,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .miembroEquipo {
@@ -1383,8 +1383,7 @@ label {
     }
 
     #welcomeTextSierra {
-        font-size: 17px;
-        margin-top: 450px;
+        font-size: 30px;
     }
 
     .cardTipoSierra {
