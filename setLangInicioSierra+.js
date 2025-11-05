@@ -32,12 +32,13 @@ var swiper = new Swiper('.mySwiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 30,
+    speed: 350,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     navigation: {
@@ -141,10 +142,11 @@ function cambiarIdioma(idioma, isReload) {
 }
 
 const idiomaText = (inicio) => {
-    elements[0].innerHTML = inicio.inicio;
-    elements[1].innerHTML = inicio.paquetes;
-    elements[2].innerHTML = inicio.nosotros;
-    elements[3].innerHTML = inicio.contactanos;
+    elements[0].innerHTML = "SIERRA EC";
+    elements[1].innerHTML = inicio.inicio;
+    elements[2].innerHTML = inicio.paquetes;
+    elements[3].innerHTML = inicio.nosotros;
+    elements[4].innerHTML = inicio.contactanos;
     document.getElementById('welcome').innerText = inicio.welcomeMessage;
     reservaAhora[0].innerHTML = inicio.botonViajamos;
     destBanner[0].innerHTML = inicio.destBanner;

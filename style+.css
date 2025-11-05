@@ -414,6 +414,7 @@ nav {
     color: #fff;
     padding-top: 60px;
     padding-bottom: 80px;
+    margin-top: 60px;
 }
 
 #iconosViajeEc {
@@ -628,7 +629,7 @@ nav {
 
 /*Cuatro Mundos section*/
 #cuatroMundos {
-    background-color: #174e63;
+    background-color: #fff;
     border-radius: 10%;
     width: 100%;
     animation-duration: 1.5s; /* Duración de la animación */
